@@ -10,7 +10,8 @@ module.exports = {
     scripts: {
         "docs:build": "vuepress build docs"
     },
-    base: "/blog/"
+    base: "/blog/",
+    dest: "docs/"
     // sidebar: [
     //     '/',
     //     '/page-a',
