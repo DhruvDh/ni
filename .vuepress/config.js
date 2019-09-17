@@ -11,7 +11,8 @@ module.exports = {
         "docs:build": "vuepress build docs"
     },
     base: "/blog/",
-    dest: "docs/"
+    dest: "docs/",
+    port: "8080"
     // sidebar: [
     //     '/',
     //     '/page-a',
