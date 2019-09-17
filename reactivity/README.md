@@ -1,4 +1,4 @@
-# Reactive Programming
+# Reactivity
 
 Let's say that one fine afternoon we decide to create two variables `a` and `b`, both of which we set to `2`, and we make a third variable `c` which we decree should be equal to the sum of `a` and `b`. If we were doing all this in Javascript, what we write should end up looking like this -
 
