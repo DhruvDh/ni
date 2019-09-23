@@ -60,7 +60,7 @@ document
 
 Here `"liked by " + randomLiker.name + " and " + noOfLikers + " others"` is what generates the messages like the following -
 
-![Liked by message](https://dhruvdh.github.io/blog/img/reactivity/liked_by_message.png)
+![Liked by message](/blog/img/reactivity/liked_by_message.png)
 
 While what `document.getElementByID("NameOfPlaceWhereLikesAreShown").text` does is that it finds the place whose text we need to set to be equal to the above message so that we can set it to be equal to the above message.
 
