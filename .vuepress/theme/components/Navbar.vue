@@ -38,7 +38,7 @@
 
 <script>
 import AlgoliaSearchBox from '@AlgoliaSearchBox'
-import SearchBox from '@SearchBox'
+import SearchBox from '@theme/components/SearchBox.vue'
 import SidebarButton from '@theme/components/SidebarButton.vue'
 import NavLinks from '@theme/components/NavLinks.vue'
 
@@ -92,6 +92,8 @@ $navbar-horizontal-padding = 1.5rem
 .navbar
   padding $navbar-vertical-padding $navbar-horizontal-padding
   line-height $navbarHeight - 1.4rem
+  background-color darken($accentColor, 0)
+  color $codeBgColor
   a, span, img
     display inline-block
   .logo
@@ -102,19 +104,21 @@ $navbar-horizontal-padding = 1.5rem
   .site-name
     font-size 1.3rem
     font-weight 600
-    color $textColor
+    color $codeBgColor
     position relative
   .links
     padding-left 1.5rem
     box-sizing border-box
-    background-color white
+    background-color darken($accentColor, 0)
     white-space nowrap
     font-size 0.9rem
     position absolute
+    color $codeBgColor
     right $navbar-horizontal-padding
     top $navbar-vertical-padding
     display flex
     .search-box
+      color $bgColor
       flex: 0 0 auto
       vertical-align top
 

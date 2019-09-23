@@ -1,6 +1,7 @@
 module.exports = {
     title: "Blog",
     description: "Just playing around with a blog.",
+    theme: 'local',
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
@@ -12,7 +13,7 @@ module.exports = {
     },
     base: "/blog/",
     dest: "docs/",
-    port: "8080"
+    port: "8080",
     // sidebar: [
     //     '/',
     //     '/page-a',
