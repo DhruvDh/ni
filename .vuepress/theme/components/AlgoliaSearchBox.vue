@@ -69,7 +69,7 @@ export default {
   .algolia-autocomplete
     line-height normal
     .ds-dropdown-menu
-      background-color $bgColor
+      background-color #fff
       border 1px solid #999
       border-radius 4px
       font-size 16px
@@ -86,7 +86,7 @@ export default {
       .ds-suggestion
         border-bottom 1px solid $borderColor
     .algolia-docsearch-suggestion--highlight
-      color darken($accentColor, 20)
+      color #2c815b
     .algolia-docsearch-suggestion
       border-color $borderColor
       padding 0
@@ -103,24 +103,21 @@ export default {
       .algolia-docsearch-suggestion--title
         font-weight 600
         margin-bottom 0
-        color $codeBgColor
+        color $textColor
       .algolia-docsearch-suggestion--subcategory-column
         vertical-align top
         padding 5px 7px 5px 5px
         border-color $borderColor
-        background #codeBgColor
+        background #f1f3f5
         &:after
           display none
       .algolia-docsearch-suggestion--subcategory-column-text
-        color $codeBgColor
+        color #555
     .algolia-docsearch-footer
       border-color $borderColor
     .ds-cursor .algolia-docsearch-suggestion--content
       background-color #e7edf3 !important
-      color $bgColor
-
-.search-query
-  color $codeBgColor
+      color $textColor
 
 @media (min-width: $MQMobile)
   .algolia-search-wrapper

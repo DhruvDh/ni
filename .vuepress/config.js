@@ -14,9 +14,19 @@ module.exports = {
     base: "/blog/",
     dest: "docs/",
     port: "8080",
-    // sidebar: [
-    //     '/',
-    //     '/page-a',
-    //     ['/page-b', 'Explicit link text']
-    // ],
+    sidebar: [
+        '/',
+        '/reactivity',
+        ['/page-b', 'Explicit link text']
+    ],
+    chainWebpack: (config, isServer) => {
+        if (!isServer) {
+            config.module
+                .rule('fonts')
+                .test(/\.(ttf|woff|woff2)$/)
+                .use('file-loader')
+                .loader('file?name=src/css/[name].[ext]')
+                .end()
+        }
+    }
 }
