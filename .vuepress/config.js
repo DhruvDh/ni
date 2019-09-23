@@ -25,7 +25,7 @@ module.exports = {
                 .rule('fonts')
                 .test(/\.(ttf|woff|woff2)$/)
                 .use('file-loader')
-                .loader('file?name=src/css/[name].[ext]')
+                .loader('file?name=/fonts/[name].[ext]')
                 .end()
         }
     }
