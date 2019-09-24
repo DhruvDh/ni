@@ -1,6 +1,6 @@
 module.exports = {
-    title: "Blog",
-    description: "Just playing around with a blog.",
+    title: "Ni",
+    description: "There's stuff in here",
     theme: 'local',
     themeConfig: {
         nav: [
@@ -11,7 +11,7 @@ module.exports = {
     scripts: {
         "docs:build": "vuepress build docs"
     },
-    base: "/blog/",
+    base: "/ni/",
     dest: "docs/",
     port: "8080",
     sidebar: [
