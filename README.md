@@ -1,8 +1,8 @@
 ---
 home: true
-heroText: Trial website
-tagline: Just trying stuff out
-actionText: Start Reading ->
-actionLink: /reactivity/
+heroText: ni
+tagline: there's stuff in here
+actionText: Progressive Web Apps ->
+actionLink: /pwa/
 ---
 

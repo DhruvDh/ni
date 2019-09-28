@@ -1,24 +1,24 @@
 module.exports = {
     title: "Ni",
     description: "There's stuff in here",
-    theme: 'local',
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'External', link: 'https://google.com' },
-        ]
+            { text: 'PWA', link: '/pwa/ ' },
+        ],
+        sidebar: [
+            '/',
+            '/PWA/',
+            '/PWA/reactivity/'
+        ],
+        displayAllHeaders: true,
+        sidebarDepth: 2
     },
     scripts: {
         "docs:build": "vuepress build docs"
     },
     base: "/ni/",
     dest: "docs/",
-    port: "8080",
-    sidebar: [
-        '/',
-        '/reactivity',
-        ['/page-b', 'Explicit link text']
-    ],
     chainWebpack: (config, isServer) => {
         if (!isServer) {
             config.module
