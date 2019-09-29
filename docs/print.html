@@ -34,11 +34,11 @@
 
         
     </head>
-    <body class="light">
+    <body class="ayu">
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "";
-            var default_theme = "light";
+            var default_theme = "ayu";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -80,7 +80,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Reactivity</a></li></ol>
+                <ol class="chapter"><li><a href="1_introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><ol class="section"><li><a href="11_reactivity.html"><strong aria-hidden="true">1.1.</strong> Why Javascript needs to be Reactive</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -99,11 +99,11 @@
                                 <i class="fa fa-paint-brush"></i>
                             </button>
                             <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                                 <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                                 <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                                 <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
-                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu (default)</button></li>
                             </ul>
                             
                             <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
@@ -147,7 +147,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#reactivity" id="reactivity">Reactivity</a></h1>
+                        <h1><a class="header" href="#introduction" id="introduction">Introduction</a></h1>
+<h1><a class="header" href="#why-javascript-needs-to-be-reactive" id="why-javascript-needs-to-be-reactive">Why JavaScript needs to be Reactive</a></h1>
 <p>Let's say that one fine afternoon we decide to create two variables <code>a</code> and <code>b</code>, both of which we set to <code>2</code>, and we make a third variable <code>c</code> which we decree should be equal to the sum of <code>a</code> and <code>b</code>. If we were doing all this in Javascript, what we write should end up looking like this -</p>
 <pre><code class="language-js">let a = 2;
 let b = 2;
@@ -185,7 +186,7 @@ console.log(c);
 // generates the &quot;liked by&quot; message and makes the relevant part of the website display it
 </code></pre>
 <p>Here <code>&quot;liked by &quot; + randomLiker.name + &quot; and &quot; + noOfLikers + &quot; others&quot;</code> is what generates the messages like the following -</p>
-<p><img src="/img/reactivity/liked_by_message.png" alt="Liked by message" /></p>
+<p><img src="/img/liked_by_message.png" alt="Liked by message" /></p>
 <p>While what <code>document.getElementByID(&quot;NameOfPlaceWhereLikesAreShown&quot;).text</code> does is that it finds the place whose text we need to set to be equal to the above message so that we can set it to be equal to the above message.</p>
 <p>For the sake of simplicity, let's not worry about how we display the &quot;liked by&quot; message and simply assume that there is a <code>displayText</code> variable whose value will end up being shown where we need to show the &quot;liked by&quot; message. So we generate the message like so -</p>
 <pre><code class="language-js">let displayText = &quot;liked by &quot; + numberOfLikers + &quot; others&quot;;
@@ -218,6 +219,21 @@ console.log(c);
 
         </div>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         

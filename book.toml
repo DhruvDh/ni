@@ -1,0 +1,13 @@
+[book]
+authors = ["dhruvdh"]
+language = "en"
+multilingual = false
+src = "src"
+title = "ni"
+
+[output.html]
+default-theme = "ayu"
+
+[build]
+build-dir = "docs"
+create-missing = true

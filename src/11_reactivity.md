@@ -1,7 +1,4 @@
----
-sidebar: auto
----
-# Reactivity
+# Why JavaScript needs to be Reactive
 
 Let's say that one fine afternoon we decide to create two variables `a` and `b`, both of which we set to `2`, and we make a third variable `c` which we decree should be equal to the sum of `a` and `b`. If we were doing all this in Javascript, what we write should end up looking like this -
 
@@ -63,7 +60,7 @@ document
 
 Here `"liked by " + randomLiker.name + " and " + noOfLikers + " others"` is what generates the messages like the following -
 
-![Liked by message](/ni/img/reactivity/liked_by_message.png)
+![Liked by message](/img/liked_by_message.png)
 
 While what `document.getElementByID("NameOfPlaceWhereLikesAreShown").text` does is that it finds the place whose text we need to set to be equal to the above message so that we can set it to be equal to the above message.
 
