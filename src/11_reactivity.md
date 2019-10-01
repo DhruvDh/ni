@@ -80,4 +80,4 @@ This is a frequent pain for everyone who develops websites and applications, not
 
 Which is exactly why a universe in which once you set `c` to be equal to `a + b`, it would actually stay equal to `a + b` forever, and not just until something changes the values of `a` and `b` be a much nicer universe to live in. You'd just have to explain how to display the data in a pretty way, and there would be no need to explain how to react to changes in data - it would do that on its own.
 
-Next up we're going to have another amazing afternoon where we try to wrestle javascript into making good on it's promise of making something equal to something else.
+Next up we're going to have another amazing afternoon where we try to wrestle javascript into making good on it's promise of making something equal to something else.se.se.

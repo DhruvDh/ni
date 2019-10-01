@@ -15,13 +15,32 @@ body {
     overflow-x: hidden;
 }
 
+.fa-copy.fa {
+    display: none;
+}
+
+@font-face {
+    font-family: "Cascadia Code";
+    src: url("/fonts/Cascadia.ttf");
+}
+
+[class^="language"] {
+    padding: 1.2em 1.4em !important;
+    line-height: 1.3rem !important;
+}
+
+.content img { 
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 code {
     font-family: "Cascadia Code", "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace;
-    @font-face {
-        font-family: "Cascadia Code";
-        src: url("../fonts/Cascadia.ttf");
-    };
     font-size: 0.875em; /* please adjust the ace font size accordingly in editor.js */
+    white-space : pre-wrap !important;
 }
 
 .left { float: left; }
@@ -68,16 +87,11 @@ h4 a.header:target::before {
     margin-left: auto;
     margin-right: auto;
     max-width: var(--content-max-width);
+    align-content: center
 }
 .content a { text-decoration: none; }
 .content a:hover { text-decoration: underline; }
-.content img { 
-    max-width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
+
 .content .header:link,
 .content .header:visited {
     color: var(--fg);
