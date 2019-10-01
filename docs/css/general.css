@@ -21,7 +21,7 @@ body {
 
 @font-face {
     font-family: "Cascadia Code";
-    src: url("/fonts/Cascadia.ttf");
+    src: url("/ni/fonts/Cascadia.ttf");
 }
 
 [class^="language"] {
