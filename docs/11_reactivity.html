@@ -31,6 +31,9 @@
         
 
         
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
     </head>
     <body class="ayu">
         <!-- Provide site root to javascript -->
@@ -78,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li><a href="1_introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><ol class="section"><li><a href="11_reactivity.html" class="active"><strong aria-hidden="true">1.1.</strong> Why Javascript needs to be Reactive</a></li></ol></li></ol>
+                <ol class="chapter"><li><a href="1_introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><ol class="section"><li><a href="11_reactivity.html" class="active"><strong aria-hidden="true">1.1.</strong> Why Javascript needs to be Reactive</a></li><li><a href="12_implementing.html"><strong aria-hidden="true">1.2.</strong> Making Javascript Reactive</a></li></ol></li><li><a href="2_client.html"><strong aria-hidden="true">2.</strong> Client</a></li><li><a href="3_server.html"><strong aria-hidden="true">3.</strong> Server</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -152,11 +155,11 @@ let b = 2;
 
 let c = a + b;
 </code></pre>
-<p>Now, on that fine afternoon, if we also decide to print out the value of <code>c</code> with <code>console.log(c)</code> and run this little script with a Javascript runtime like <a href="https://nodejs.org/en/">Node</a>, we would see what we expect to see printed out -</p>
-<pre><code class="language-sh">4
+<p>Now, on that fine afternoon, if we also decide to print out the value of <code>c</code> with a function like <code>console.log(c)</code> and run this little script with a Javascript runtime like <a href="https://nodejs.org/en/">Node</a>, we would see the sum of <code>a</code> and <code>b</code> printed out -</p>
+<pre><code class="language-js">4
 </code></pre>
-<p>Which prints <code>a + b</code> or <code>2 + 2</code> and thusly <code>4</code>. At this point if, rather miraculously, we still want to play around with our variables and haven't opened Netflix in a new tab, then we might try changing the the value of either <code>a</code> or <code>b</code> - just for some mischief.</p>
-<p>Doing and printing out <code>c</code> again all written down in code would look something like this -</p>
+<p>Which is <code>2 + 2</code> and thusly <code>4</code>. At this point if, rather miraculously, we still want to play around with our variables and haven't opened Netflix in a new tab, then we might try changing the the value of either <code>a</code> or <code>b</code> - just for some mischief.</p>
+<p>Doing that and printing out <code>c</code> again all written down in code would look something like this -</p>
 <pre><code class="language-js">let a = 2;
 let b = 2;
 
@@ -166,34 +169,35 @@ console.log(c);
 a = 3;
 console.log(c);
 </code></pre>
-<p>Which if we run, again in a Javascript runtime like Node, would leave us this output -</p>
+<p>Which if we run, again in a Javascript runtime like Node, would leave us with this output -</p>
 <pre><code class="language-js">4
 4
 </code></pre>
 <p>Uhm, hold up. Yeah, this afternoon sucks but how is it that <code>c</code> prints out as <code>4</code> the second time around too? </p>
-<p>We did tell javascript that <code>c</code> is <em>equal</em> to <code>a + b</code>, which should mean that <code>c</code> equals <code>5</code> when we log it to the console the second time, seeing as how <code>a + b</code> is now <code>3 + 2</code>?</p>
-<p>But evidently that's not how Javascript works, as <code>c</code> is still <code>4</code>. We can only conclude that Javascript is a spoilt little brat that does not to what it's told. It is seemingly deceiving us into thinking that <code>c</code> is equal to <code>a + b</code> when it most certainly isn't. </p>
-<p>At this point, there maybe some of you whose brains were marred by an education in Computer Science thinking that, well, there's nothing particularly wrong here, and that Javascript is innocent because when we wrote <code>let c = a + b;</code>, we did not actually set <code>c</code> to be equal to <code>a + b</code>, we simply stored the <em>current</em> value of <code>a + b</code> into <code>c</code> - which happened to be <code>4</code> at the time. And as such it remains to be <code>4</code> for the rest of <code>c</code>'s existence until we store a different value there. </p>
-<p>That being said, it is also very easy to imagine a parallel universe in which variables, once declared to be equal to something else (say <code>a + b</code>), actually stay equal to that something else (say <code>a + b</code>). That universe would much nicer to live in too and you probably need a little convincing to see why.</p>
-<p>Let's think about websites for a moment, like the one you're on now. Almost all websites follow a simple pattern - you have some data, your intention is to show that data to users of that website, and you use HTML and CSS to make sure said data looks pretty when shown.</p>
-<p>You'd be surprised how many website adhere to this simple pattern. Even something like Instagram (<a href="https://www.instagram.com/">it's not just an app!</a>), the posts are data, the follower count is data, the comments on a post are data, the number of likes is data. Once you're on someone's profile page or someone's post, your browser asks for the relevant data, the server responds with said data, and then somewhere in the code for Instagram would be a line like this -</p>
+<p>We did tell javascript to let <code>c</code> be <em>equal</em> to <code>a + b</code>; and seeing as how <code>a + b</code> is now <code>3 + 2</code>, shouldn't javascript be printing out <code>5</code> the second time we print <code>c</code>?</p>
+<p>But evidently that's not what Javascript did, as <code>c</code> was still <code>4</code>. We can only conclude that Javascript is a spoilt little brat that does not to what it's told. It is seemingly deceiving us into thinking that <code>c</code> is equal to <code>a + b</code> when it most certainly isn't.</p>
+<p>At this point there maybe some of you whose brains were marred by an education in Computer Science thinking that, well, there's nothing particularly wrong here, and that Javascript is innocent because when we wrote <code>let c = a + b;</code>, we did not actually set <code>c</code> to be equal to <code>a + b</code>; we simply stored the <em>current</em> value of <code>a + b</code> into <code>c</code> - which happened to be <code>4</code> at the time. And as such it remains to be <code>4</code> for the rest of <code>c</code>'s existence until we store a different value there.</p>
+<p>These are the same kinds of people that would tell you that \( sin^2(x) \) is equal to \( (sin(x))^2 \) but \( sin^{-1}(x) \) is not equal to \( \frac{1}{sin(x)} \); just haters of anything that's sound and sensible.</p>
+<p>They would also say that this is just how it works and that we should follow it or face doom and gloom; and they're probably right. That being said, it is also very easy to imagine a parallel universe in which variables, once declared to be equal to something else (say <code>a + b</code>), actually stay equal to that something else. That universe, I think, would be much nicer to live in too but you probably need a little convincing to see why that is so.</p>
+<p>Let's think about websites for a moment, like the one you're on now. Almost all websites follow a simple pattern - you have some data, your intention is to show that data to users of your website, and you use <a href="https://www.w3schools.com/html/">HTML</a> and <a href="https://www.w3schools.com/css/default.asp">CSS</a> to make sure said data looks pretty when shown. Let's take instagram (<a href="https://www.instagram.com/">it's not just an app!</a>) as an example,the posts are data, the follower count is data, the comments on a post are data, the number of likes is data. Once you're on someone's profile page or someone's post, your computer or phone asks for the relevant data, instagram's servers responds with said data, and then somewhere in the code for Instagram the Instagram website would be a line that does something like this -</p>
 <pre><code class="language-js">document
     .getElementByID(&quot;NameOfPlaceWhereLikesAreShown&quot;)
-    .text = &quot;liked by &quot; + randomLiker.name + &quot; and &quot; + noOfLikers + &quot; others&quot;;
+    .text = &quot;Liked by &quot; + randomLiker.name + &quot; and &quot; + noOfLikers + &quot; others&quot;;
 // generates the &quot;liked by&quot; message and makes the relevant part of the website display it
 </code></pre>
-<p>Here <code>&quot;liked by &quot; + randomLiker.name + &quot; and &quot; + noOfLikers + &quot; others&quot;</code> is what generates the messages like the following -</p>
-<p><img src="/ni/img/liked_by_message.png" alt="Liked by message" /></p>
-<p>While what <code>document.getElementByID(&quot;NameOfPlaceWhereLikesAreShown&quot;).text</code> does is that it finds the place whose text we need to set to be equal to the above message so that we can set it to be equal to the above message.</p>
+<p>Here <code>&quot;Liked by &quot; + randomLiker.name + &quot; and &quot; + noOfLikers + &quot; others&quot;</code> is what generates the messages like the following -</p>
+<p><img src="/img/liked_by_message.png" alt="Liked by message" /></p>
+<p>While what <code>document.getElementByID(&quot;NameOfPlaceWhereLikesAreShown&quot;).text</code> does is that it finds the place where we need to display the &quot;liked by&quot; message and set's its text to be equal to the &quot;liked by&quot; message we just generated.</p>
 <p>For the sake of simplicity, let's not worry about how we display the &quot;liked by&quot; message and simply assume that there is a <code>displayText</code> variable whose value will end up being shown where we need to show the &quot;liked by&quot; message. So we generate the message like so -</p>
-<pre><code class="language-js">let displayText = &quot;liked by &quot; + numberOfLikers + &quot; others&quot;;
+<pre><code class="language-js">let displayText = &quot;Liked by &quot; + numberOfLikers + &quot; others&quot;;
 </code></pre>
-<p>The interesting thing to note here is that this particular piece of code does do a rather similar job as the earlier <code>let c = a + b;</code> line - it sets a variable to be a certain value based on the values of other variables. And as such, it suffers from the same problems of javascript being dumb - when <code>a</code> or <code>b</code> changes, the value of <code>c</code> doesn't react to that change, and remains equal to the old, incorrect value. Similarly here, when people keep liking your post because of course they do, the value of <code>displayText</code> won't react and will remain equal to the old value.</p>
-<p>At this point, people who make websites have 2 options, either they are okay with the data they show being old, and incorrect, and hope that the user would refresh or reload the page if he or she wants the newest values, or they have to do lots of javascript and client-server gymnastics to ensure that the data being shown is always the newest.</p>
+<p>The interesting thing to note here is that this particular piece of code does do a very similar job to the earlier <code>let c = a + b;</code> line - it sets a variable to be a certain value based on the values of other variables. There just happen to be 3 variables instead of 2, and they happen to be &quot;adding&quot; strings instead of numbers.</p>
+<p>It also suffers from the same problems of javascript being dumb - when <code>a</code> or <code>b</code> changes, the value of <code>c</code> doesn't react to that change, and remains equal to the old, incorrect value. Similarly here, when people keep liking your post because of course they do, the value of <code>displayText</code> won't react, or change and will remain equal to the old value.</p>
+<p>At this point, people who make websites have 2 options, either they are okay with the data they show being old, and incorrect, and hope that the user would refresh or reload the page if he or she wants the latest and greatest, or they have to do lots of javascript and client-server gymnastics to ensure that the data being shown is always the newest.</p>
 <p>The way it works is that on the client-side, that is on your computer, they watch for people clicking the &quot;like&quot; button and then update the &quot;numberOfLikes&quot; variable whenever that happens, and then also update the &quot;displayText&quot; message whenever <em>that</em> happens, and also at the same time send a message to the sever saying &quot;yo, this dude likes this&quot;. Which might not seem like a whole lot of work, but when you have to do it for each and everything you are displaying on your application of website that is capable of changing it does add up to be a whole lot of work for us to do just to cover up for Javascript being dumb.</p>
-<p>This is a frequent pain for everyone who develops websites and applications, not only do they have to instruct a computer or a phone about what data to display, how to display it in a pretty way, but also having to explain in tedious detail to said phone or computer on how to react if this data changes.</p>
+<p>This is a frequent pain for everyone who develops websites and applications, not only do they have to instruct a computer or a phone about what data to display, how to display it in a pretty way, but also having to explain in tedious detail to said phone or computer on how to react to changes in data according to a users expectations.</p>
 <p>Which is exactly why a universe in which once you set <code>c</code> to be equal to <code>a + b</code>, it would actually stay equal to <code>a + b</code> forever, and not just until something changes the values of <code>a</code> and <code>b</code> be a much nicer universe to live in. You'd just have to explain how to display the data in a pretty way, and there would be no need to explain how to react to changes in data - it would do that on its own.</p>
-<p>Next up we're going to have another amazing afternoon where we try to wrestle javascript into making good on it's promise of making something equal to something else.se.se.se.</p>
+<p>Next up we're going to have another amazing afternoon where we try to wrestle javascript into making good on it's promise of making something equal to something else.se.</p>
 
                     </main>
 
@@ -205,6 +209,10 @@ console.log(c);
                             </a>
                         
 
+                        
+                            <a rel="next" href="12_implementing.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
                         
 
                         <div style="clear: both"></div>
@@ -220,10 +228,29 @@ console.log(c);
                 
 
                 
+                    <a href="12_implementing.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
             </nav>
 
         </div>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         

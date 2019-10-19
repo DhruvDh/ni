@@ -20,8 +20,8 @@ body {
 }
 
 @font-face {
-    font-family: "Cascadia Code";
-    src: url("/ni/fonts/Cascadia.ttf");
+    font-family: "CascadiaCode Nerd Font";
+    src: url("/ni/fonts/CascadiaCode.Complete.ttf");
 }
 
 [class^="language"] {
@@ -38,7 +38,7 @@ body {
 
 
 code {
-    font-family: "Cascadia Code", "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace;
+    font-family: "CascadiaCode Nerd Font", "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace;
     font-size: 0.875em; /* please adjust the ace font size accordingly in editor.js */
     white-space : pre-wrap !important;
 }
