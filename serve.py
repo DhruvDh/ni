@@ -22,6 +22,7 @@ for thing in os.listdir('.'):
             
             file.seek(0)
             file.write(text)
+            file.truncate()
             file.close()
 
 os.chdir('..')

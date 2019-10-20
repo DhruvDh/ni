@@ -1,4 +1,4 @@
-# Why JavaScript needs to be Reactive
+# Motivation for Reactivity
 
 Let's say that one fine afternoon we decide to create two variables `a` and `b`, both of which we set to `2`, and we make a third variable `c` which we decree should be equal to the sum of `a` and `b`. If we were doing all this in Javascript, what we write should end up looking like this -
 
@@ -60,7 +60,7 @@ document
 
 Here `"Liked by " + randomLiker.name + " and " + noOfLikers + " others"` is what generates the messages like the following -
 
-![Liked by message](/img/liked_by_message.png)
+![Liked by message](/ni/img/liked_by_message.png)
 
 While what `document.getElementByID("NameOfPlaceWhereLikesAreShown").text` does is that it finds the place where we need to display the "liked by" message and set's its text to be equal to the "liked by" message we just generated.
 
@@ -82,4 +82,4 @@ This is a frequent pain for everyone who develops websites and applications, not
 
 Which is exactly why a universe in which once you set `c` to be equal to `a + b`, it would actually stay equal to `a + b` forever, and not just until something changes the values of `a` and `b` be a much nicer universe to live in. You'd just have to explain how to display the data in a pretty way, and there would be no need to explain how to react to changes in data - it would do that on its own.
 
-Next up we're going to have another amazing afternoon where we try to wrestle javascript into making good on it's promise of making something equal to something else.se.
+Next up we're going to have another amazing afternoon where we try to wrestle javascript into making good on it's promise of making something equal to something else.

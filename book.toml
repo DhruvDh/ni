@@ -8,6 +8,7 @@ title = "ni"
 [output.html]
 default-theme = "ayu"
 mathjax-support = true
+git-repository-url = "https://github.com/DhruvDh/ni"
 
 [build]
 build-dir = "docs"

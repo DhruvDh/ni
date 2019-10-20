@@ -22,7 +22,25 @@ for thing in os.listdir('.'):
             
             file.seek(0)
             file.write(text)
+            file.truncate()
             file.close()
 
 os.chdir('..')
 os.system('mdbook build')
+
+
+os.chdir('src')
+count = 0
+
+for thing in os.listdir('.'):
+    path = os.path.join(os.getcwd(), thing)
+
+    if thing.endswith('.md') or thing.endswith(".MD"):
+        with open(path, 'r+') as file:
+            text = file.read()
+            
+            # print(f"{path}: {len(text.split())} words.")
+            count += len(text.split())
+
+with open("../words", 'w') as f:
+    f.write(str(count))

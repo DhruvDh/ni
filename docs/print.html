@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li><a href="1_introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><ol class="section"><li><a href="11_reactivity.html"><strong aria-hidden="true">1.1.</strong> Why Javascript needs to be Reactive</a></li><li><a href="12_implementing.html"><strong aria-hidden="true">1.2.</strong> Making Javascript Reactive</a></li></ol></li><li><a href="2_client.html"><strong aria-hidden="true">2.</strong> Client</a></li><li><a href="3_server.html"><strong aria-hidden="true">3.</strong> Server</a></li></ol>
+                <ol class="chapter"><li><a href="1_introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><ol class="section"><li><a href="11_reactivity.html"><strong aria-hidden="true">1.1.</strong> Motivation for Reactivity</a></li><li><a href="12_implementing.html"><strong aria-hidden="true">1.2.</strong> Implementing Reactivity in Javascript</a></li></ol></li><li><a href="2_client.html"><strong aria-hidden="true">2.</strong> Client</a></li><li><a href="3_server.html"><strong aria-hidden="true">3.</strong> Server</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -122,6 +122,10 @@
                                 <i id="print-button" class="fa fa-print"></i>
                             </a>
                             
+                            <a href="https://github.com/DhruvDh/ni" title="Git repository" aria-label="Git repository">
+                                <i id="git-repository-button" class="fa fa-github"></i>
+                            </a>
+                            
                         </div>
                     </div>
                 </div>
@@ -151,7 +155,7 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#introduction" id="introduction">Introduction</a></h1>
-<h1><a class="header" href="#why-javascript-needs-to-be-reactive" id="why-javascript-needs-to-be-reactive">Why JavaScript needs to be Reactive</a></h1>
+<h1><a class="header" href="#motivation-for-reactivity" id="motivation-for-reactivity">Motivation for Reactivity</a></h1>
 <p>Let's say that one fine afternoon we decide to create two variables <code>a</code> and <code>b</code>, both of which we set to <code>2</code>, and we make a third variable <code>c</code> which we decree should be equal to the sum of <code>a</code> and <code>b</code>. If we were doing all this in Javascript, what we write should end up looking like this -</p>
 <pre><code class="language-js">let a = 2;
 let b = 2;
@@ -189,7 +193,7 @@ console.log(c);
 // generates the &quot;liked by&quot; message and makes the relevant part of the website display it
 </code></pre>
 <p>Here <code>&quot;Liked by &quot; + randomLiker.name + &quot; and &quot; + noOfLikers + &quot; others&quot;</code> is what generates the messages like the following -</p>
-<p><img src="/img/liked_by_message.png" alt="Liked by message" /></p>
+<p><img src="/ni/img/liked_by_message.png" alt="Liked by message" /></p>
 <p>While what <code>document.getElementByID(&quot;NameOfPlaceWhereLikesAreShown&quot;).text</code> does is that it finds the place where we need to display the &quot;liked by&quot; message and set's its text to be equal to the &quot;liked by&quot; message we just generated.</p>
 <p>For the sake of simplicity, let's not worry about how we display the &quot;liked by&quot; message and simply assume that there is a <code>displayText</code> variable whose value will end up being shown where we need to show the &quot;liked by&quot; message. So we generate the message like so -</p>
 <pre><code class="language-js">let displayText = &quot;Liked by &quot; + numberOfLikers + &quot; others&quot;;
@@ -200,7 +204,7 @@ console.log(c);
 <p>The way it works is that on the client-side, that is on your computer, they watch for people clicking the &quot;like&quot; button and then update the &quot;numberOfLikes&quot; variable whenever that happens, and then also update the &quot;displayText&quot; message whenever <em>that</em> happens, and also at the same time send a message to the sever saying &quot;yo, this dude likes this&quot;. Which might not seem like a whole lot of work, but when you have to do it for each and everything you are displaying on your application of website that is capable of changing it does add up to be a whole lot of work for us to do just to cover up for Javascript being dumb.</p>
 <p>This is a frequent pain for everyone who develops websites and applications, not only do they have to instruct a computer or a phone about what data to display, how to display it in a pretty way, but also having to explain in tedious detail to said phone or computer on how to react to changes in data according to a users expectations.</p>
 <p>Which is exactly why a universe in which once you set <code>c</code> to be equal to <code>a + b</code>, it would actually stay equal to <code>a + b</code> forever, and not just until something changes the values of <code>a</code> and <code>b</code> be a much nicer universe to live in. You'd just have to explain how to display the data in a pretty way, and there would be no need to explain how to react to changes in data - it would do that on its own.</p>
-<p>Next up we're going to have another amazing afternoon where we try to wrestle javascript into making good on it's promise of making something equal to something else.se.</p>
+<p>Next up we're going to have another amazing afternoon where we try to wrestle javascript into making good on it's promise of making something equal to something else.</p>
 <h1><a class="header" href="#making-javascript-reactive" id="making-javascript-reactive">Making Javascript Reactive</a></h1>
 <h1><a class="header" href="#client" id="client">Client</a></h1>
 <h1><a class="header" href="#server" id="server">Server</a></h1>
@@ -226,21 +230,6 @@ console.log(c);
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3001");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload(true); // force reload from server (not from cache)
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

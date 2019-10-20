@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Making Javascript Reactive - ni</title>
+        <title>Implementing Reactivity in Javascript - ni</title>
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li><a href="1_introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><ol class="section"><li><a href="11_reactivity.html"><strong aria-hidden="true">1.1.</strong> Why Javascript needs to be Reactive</a></li><li><a href="12_implementing.html" class="active"><strong aria-hidden="true">1.2.</strong> Making Javascript Reactive</a></li></ol></li><li><a href="2_client.html"><strong aria-hidden="true">2.</strong> Client</a></li><li><a href="3_server.html"><strong aria-hidden="true">3.</strong> Server</a></li></ol>
+                <ol class="chapter"><li><a href="1_introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><ol class="section"><li><a href="11_reactivity.html"><strong aria-hidden="true">1.1.</strong> Motivation for Reactivity</a></li><li><a href="12_implementing.html" class="active"><strong aria-hidden="true">1.2.</strong> Implementing Reactivity in Javascript</a></li></ol></li><li><a href="2_client.html"><strong aria-hidden="true">2.</strong> Client</a></li><li><a href="3_server.html"><strong aria-hidden="true">3.</strong> Server</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -118,6 +118,10 @@
                         <div class="right-buttons">
                             <a href="print.html" title="Print this book" aria-label="Print this book">
                                 <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                            <a href="https://github.com/DhruvDh/ni" title="Git repository" aria-label="Git repository">
+                                <i id="git-repository-button" class="fa fa-github"></i>
                             </a>
                             
                         </div>
@@ -187,21 +191,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3001");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload(true); // force reload from server (not from cache)
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

@@ -2,7 +2,6 @@ import os
 import re
 import sys
 
-base_url = '/ni'
 os.chdir('src')
 
 count = 0
@@ -18,3 +17,7 @@ for thing in os.listdir('.'):
             count += len(text.split())
 
 print(f"{count} words.")
+
+with open('../words', 'r') as f:
+    old_count = int(f.read())
+    print(f"..added {count - old_count} words since last build.")
