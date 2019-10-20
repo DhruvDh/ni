@@ -2,8 +2,9 @@
 
 Hi, so there's stuff in here.
 
-- [Introduction](1_introduction.md)
+- [TODO: Introduction](1_introduction.md)
+  - [TODO: Browser stuff](10_browser.md)
   - [Motivation for Reactivity](./11_reactivity.md)
-  - [Implementing Reactivity in Javascript](./12_implementing.md)
-- [Client](2_client.md)
-- [Server](3_server.md)
+  - [TODO: Implementing Reactivity in Javascript](./12_implementing.md)
+- [TODO: Client stuff](2_client.md)
+- [TODO: Server stuff](3_server.md)
