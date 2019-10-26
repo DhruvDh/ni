@@ -18,8 +18,7 @@ for thing in os.listdir('.'):
             for a_thing in img_tag.findall(text):
                 url = a_thing[1]
                 if not url.startswith(base_url):
-                    print(
-                        f"[{thing}]\t..replaced {url} with {base_url + url}", file=sys.stderr)
+                    print(f"[{thing}]\t..replaced {url} with {base_url + url}")
                     text = text.replace(url, base_url + url)
 
             file.seek(0)
