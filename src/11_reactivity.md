@@ -11,9 +11,8 @@ let c = a + b;
 
 Now, on that fine afternoon, if we also decide to print out the value of `c` with a function like `console.log(c)` and run this little script with a Javascript runtime like [Node](https://nodejs.org/en/), we would see the sum of `a` and `b` printed out -
 
-```js
-4
-```
+![Output of console.log(c)](/img/aplusb_1.svg)
+
 
 Which is `2 + 2` and thusly `4`. At this point if, rather miraculously, we still want to play around with our variables and haven't opened Netflix in a new tab, then we might try changing the the value of either `a` or `b` - just for some mischief.
 
@@ -32,10 +31,7 @@ console.log(c);
 
 Which if we run, again in a Javascript runtime like Node, would leave us with this output -
 
-```js
-4
-4
-```
+![Output of console.log(c)](/img/aplusb_2.svg)
 
 Uhm, hold up. Yeah, this afternoon sucks but how is it that `c` prints out as `4` the second time around too? 
 

@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li><a href="1_introduction.html"><strong aria-hidden="true">1.</strong> TODO: Introduction</a></li><li><ol class="section"><li><a href="10_browser.html"><strong aria-hidden="true">1.1.</strong> TODO: Browser stuff</a></li><li><a href="11_reactivity.html"><strong aria-hidden="true">1.2.</strong> Motivation for Reactivity</a></li><li><a href="12_implementing.html"><strong aria-hidden="true">1.3.</strong> TODO: Implementing Reactivity in Javascript</a></li></ol></li><li><a href="2_client.html"><strong aria-hidden="true">2.</strong> TODO: Client stuff</a></li><li><a href="3_server.html"><strong aria-hidden="true">3.</strong> TODO: Server stuff</a></li></ol>
+                <ol class="chapter"><li class="expanded "><a href="1_introduction.html"><strong aria-hidden="true">1.</strong> TODO: Introduction</a></li><li><ol class="section"><li class="expanded "><a href="10_browser.html"><strong aria-hidden="true">1.1.</strong> TODO: Browser stuff</a></li><li class="expanded "><a href="11_reactivity.html"><strong aria-hidden="true">1.2.</strong> Motivation for Reactivity</a></li><li class="expanded "><a href="12_implementing.html"><strong aria-hidden="true">1.3.</strong> TODO: Implementing Reactivity in Javascript</a></li></ol></li><li class="expanded "><a href="2_client.html"><strong aria-hidden="true">2.</strong> TODO: Client stuff</a></li><li class="expanded "><a href="3_server.html"><strong aria-hidden="true">3.</strong> TODO: Server stuff</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -164,8 +164,7 @@ let b = 2;
 let c = a + b;
 </code></pre>
 <p>Now, on that fine afternoon, if we also decide to print out the value of <code>c</code> with a function like <code>console.log(c)</code> and run this little script with a Javascript runtime like <a href="https://nodejs.org/en/">Node</a>, we would see the sum of <code>a</code> and <code>b</code> printed out -</p>
-<pre><code class="language-js">4
-</code></pre>
+<p><img src="/img/aplusb_1.svg" alt="Output of console.log(c)" /></p>
 <p>Which is <code>2 + 2</code> and thusly <code>4</code>. At this point if, rather miraculously, we still want to play around with our variables and haven't opened Netflix in a new tab, then we might try changing the the value of either <code>a</code> or <code>b</code> - just for some mischief.</p>
 <p>Doing that and printing out <code>c</code> again all written down in code would look something like this -</p>
 <pre><code class="language-js">let a = 2;
@@ -178,9 +177,7 @@ a = 3;
 console.log(c);
 </code></pre>
 <p>Which if we run, again in a Javascript runtime like Node, would leave us with this output -</p>
-<pre><code class="language-js">4
-4
-</code></pre>
+<p><img src="/img/aplusb_2.svg" alt="Output of console.log(c)" /></p>
 <p>Uhm, hold up. Yeah, this afternoon sucks but how is it that <code>c</code> prints out as <code>4</code> the second time around too? </p>
 <p>We did tell javascript to let <code>c</code> be <em>equal</em> to <code>a + b</code>; and seeing as how <code>a + b</code> is now <code>3 + 2</code>, shouldn't javascript be printing out <code>5</code> the second time we print <code>c</code>?</p>
 <p>But evidently that's not what Javascript did, as <code>c</code> was still <code>4</code>. We can only conclude that Javascript is a spoilt little brat that does not to what it's told. It is seemingly deceiving us into thinking that <code>c</code> is equal to <code>a + b</code> when it most certainly isn't.</p>
@@ -207,6 +204,21 @@ console.log(c);
 <p>Which is exactly why a universe in which once you set <code>c</code> to be equal to <code>a + b</code>, it would actually stay equal to <code>a + b</code> forever, and not just until something changes the values of <code>a</code> and <code>b</code> be a much nicer universe to live in. You'd just have to explain how to display the data in a pretty way, and there would be no need to explain how to react to changes in data - it would do that on its own.</p>
 <p>Next up we're going to have another amazing afternoon where we try to wrestle javascript into making good on it's promise of making something equal to something else.</p>
 <h1><a class="header" href="#making-javascript-reactive" id="making-javascript-reactive">Making Javascript Reactive</a></h1>
+<p>Here is what you'er going to do -</p>
+<ul>
+<li>
+<p>First you'll write out the code for the reactivity implementation</p>
+<ul>
+<li>You'll first make a <code>data</code> object and put <code>a</code> and <code>b</code> into it.</li>
+<li>You'll create a <code>c</code> variable and set it <code>data.a + data.b</code>.</li>
+<li>You'll put <code>c</code> inside <code>computed</code>.</li>
+<li>You'll walk through <code>data</code> and add some</li>
+</ul>
+</li>
+<li>
+<p>Then you'll start writing about the whole thing, start to finsh, which you'll do in one day. Fucking do it or I will never let you talk to Nishita again.</p>
+</li>
+</ul>
 <h1><a class="header" href="#client" id="client">Client</a></h1>
 <h1><a class="header" href="#server" id="server">Server</a></h1>
 

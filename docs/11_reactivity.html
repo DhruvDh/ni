@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li><a href="1_introduction.html"><strong aria-hidden="true">1.</strong> TODO: Introduction</a></li><li><ol class="section"><li><a href="10_browser.html"><strong aria-hidden="true">1.1.</strong> TODO: Browser stuff</a></li><li><a href="11_reactivity.html" class="active"><strong aria-hidden="true">1.2.</strong> Motivation for Reactivity</a></li><li><a href="12_implementing.html"><strong aria-hidden="true">1.3.</strong> TODO: Implementing Reactivity in Javascript</a></li></ol></li><li><a href="2_client.html"><strong aria-hidden="true">2.</strong> TODO: Client stuff</a></li><li><a href="3_server.html"><strong aria-hidden="true">3.</strong> TODO: Server stuff</a></li></ol>
+                <ol class="chapter"><li class="expanded "><a href="1_introduction.html"><strong aria-hidden="true">1.</strong> TODO: Introduction</a></li><li><ol class="section"><li class="expanded "><a href="10_browser.html"><strong aria-hidden="true">1.1.</strong> TODO: Browser stuff</a></li><li class="expanded "><a href="11_reactivity.html" class="active"><strong aria-hidden="true">1.2.</strong> Motivation for Reactivity</a></li><li class="expanded "><a href="12_implementing.html"><strong aria-hidden="true">1.3.</strong> TODO: Implementing Reactivity in Javascript</a></li></ol></li><li class="expanded "><a href="2_client.html"><strong aria-hidden="true">2.</strong> TODO: Client stuff</a></li><li class="expanded "><a href="3_server.html"><strong aria-hidden="true">3.</strong> TODO: Server stuff</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -160,8 +160,7 @@ let b = 2;
 let c = a + b;
 </code></pre>
 <p>Now, on that fine afternoon, if we also decide to print out the value of <code>c</code> with a function like <code>console.log(c)</code> and run this little script with a Javascript runtime like <a href="https://nodejs.org/en/">Node</a>, we would see the sum of <code>a</code> and <code>b</code> printed out -</p>
-<pre><code class="language-js">4
-</code></pre>
+<p><img src="/img/aplusb_1.svg" alt="Output of console.log(c)" /></p>
 <p>Which is <code>2 + 2</code> and thusly <code>4</code>. At this point if, rather miraculously, we still want to play around with our variables and haven't opened Netflix in a new tab, then we might try changing the the value of either <code>a</code> or <code>b</code> - just for some mischief.</p>
 <p>Doing that and printing out <code>c</code> again all written down in code would look something like this -</p>
 <pre><code class="language-js">let a = 2;
@@ -174,9 +173,7 @@ a = 3;
 console.log(c);
 </code></pre>
 <p>Which if we run, again in a Javascript runtime like Node, would leave us with this output -</p>
-<pre><code class="language-js">4
-4
-</code></pre>
+<p><img src="/img/aplusb_2.svg" alt="Output of console.log(c)" /></p>
 <p>Uhm, hold up. Yeah, this afternoon sucks but how is it that <code>c</code> prints out as <code>4</code> the second time around too? </p>
 <p>We did tell javascript to let <code>c</code> be <em>equal</em> to <code>a + b</code>; and seeing as how <code>a + b</code> is now <code>3 + 2</code>, shouldn't javascript be printing out <code>5</code> the second time we print <code>c</code>?</p>
 <p>But evidently that's not what Javascript did, as <code>c</code> was still <code>4</code>. We can only conclude that Javascript is a spoilt little brat that does not to what it's told. It is seemingly deceiving us into thinking that <code>c</code> is equal to <code>a + b</code> when it most certainly isn't.</p>

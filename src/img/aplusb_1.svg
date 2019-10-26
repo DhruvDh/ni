@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="terminal" baseProfile="full" viewBox="0 0 535 183" width="535" version="1.1">
+    <defs>
+        <termtosvg:template_settings xmlns:termtosvg="https://github.com/nbedos/termtosvg">
+            <termtosvg:screen_geometry columns="61" rows="6"/>
+            <termtosvg:animation type="css"/>
+        </termtosvg:template_settings>
+        <style type="text/css" id="generated-style"><![CDATA[#screen {
+                font-family: "CascadiaCode Nerd Font", "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace; font-variant-ligatures: normal;
+                font-style: normal;
+                font-size: 0.875em;
+            }
+
+        text {
+            dominant-baseline: text-before-edge;
+            white-space: pre;
+        }
+    
+            :root {
+                --animation-duration: 5732ms;
+            }
+
+            @keyframes roll {
+                0.000%{transform:translateY(0px)}
+18.161%{transform:translateY(-136px)}
+19.138%{transform:translateY(-272px)}
+21.598%{transform:translateY(-408px)}
+22.278%{transform:translateY(-544px)}
+25.227%{transform:translateY(-680px)}
+28.385%{transform:translateY(-816px)}
+32.676%{transform:translateY(-952px)}
+34.543%{transform:translateY(-1088px)}
+36.811%{transform:translateY(-1224px)}
+39.567%{transform:translateY(-1360px)}
+42.306%{transform:translateY(-1496px)}
+45.447%{transform:translateY(-1632px)}
+46.441%{transform:translateY(-1768px)}
+51.727%{transform:translateY(-1904px)}
+52.948%{transform:translateY(-2040px)}
+58.583%{transform:translateY(-2176px)}
+59.403%{transform:translateY(-2312px)}
+61.863%{transform:translateY(-2448px)}
+82.554%{transform:translateY(-2584px)}
+100.000%{transform:translateY(-2584px)}
+            }
+
+            #screen_view {
+                animation-duration: 5732ms;
+                animation-iteration-count:infinite;
+                animation-name:roll;
+                animation-timing-function: steps(1,end);
+                animation-fill-mode: forwards;
+            }
+        ]]></style>
+        <style type="text/css" id="user-style">
+            /* gjm8 color theme (source: https://terminal.sexy/) */
+            .foreground {fill: #f8f8f2}
+            .background {fill: #272822}
+            .color0 {fill: #272822}
+            .color1 {fill: #f92672}
+            .color2 {fill: #a6e22e}
+            .color3 {fill: #f4bf75}
+            .color4 {fill: #66d9ef}
+            .color5 {fill: #ae81ff}
+            .color6 {fill: #a1efe4}
+            .color7 {fill: #f8f8f2}
+            .color8 {fill: #75715e}
+            .color9 {fill: #fd971f}
+            .color10 {fill: #383830}
+            .color11 {fill: #49483e}
+            .color12 {fill: #a59f85}
+            .color13 {fill: #f5f4f1}
+            .color14 {fill: #cc6633}
+            .color15 {fill: #f9f8f5}
+        </style>
+    </defs>
+    <rect id="terminalui" class="background" width="100%" height="100%" ry="4.5826941"/>
+    <circle cx="24" cy="23" r="7" class="color1"/>
+    <circle cx="44" cy="23" r="7" class="color3"/>
+    <circle cx="64" cy="23" r="7" class="color2"/>
+    <svg id="screen" width="488" height="102" x="23" y="50" viewBox="0 0 488 102" preserveAspectRatio="xMidYMin slice">
+        <rect class="background" height="100%" width="100%" x="0" y="0"/><defs><g id="g1"><text x="0" textLength="168" class="color0"> .../blog/scratchpad </text><text x="168" textLength="8" class="color4">&#57520;</text><text x="176" textLength="96" class="color0"> &#57504; master &#9679; </text><text x="272" textLength="16" class="color3">&#57520; </text><text x="288" textLength="8" class="background"> </text></g><g id="g2"><text x="0" textLength="168" class="color0"> .../blog/scratchpad </text><text x="168" textLength="8" class="color4">&#57520;</text><text x="176" textLength="96" class="color0"> &#57504; master &#9679; </text><text x="272" textLength="16" class="color3">&#57520; </text><text x="288" textLength="8" class="foreground">n</text><text x="296" textLength="8" class="background"> </text></g><g id="g3"><text x="0" textLength="168" class="color0"> .../blog/scratchpad </text><text x="168" textLength="8" class="color4">&#57520;</text><text x="176" textLength="96" class="color0"> &#57504; master &#9679; </text><text x="272" textLength="16" class="color3">&#57520; </text><text x="288" textLength="16" class="foreground">no</text><text x="304" textLength="8" class="background"> </text></g><g id="g4"><text x="0" textLength="168" class="color0"> .../blog/scratchpad </text><text x="168" textLength="8" class="color4">&#57520;</text><text x="176" textLength="96" class="color0"> &#57504; master &#9679; </text><text x="272" textLength="16" class="color3">&#57520; </text><text x="288" textLength="24" class="foreground">nod</text><text x="312" textLength="8" class="background"> </text></g><g id="g5"><text x="0" textLength="168" class="color0"> .../blog/scratchpad </text><text x="168" textLength="8" class="color4">&#57520;</text><text x="176" textLength="96" class="color0"> &#57504; master &#9679; </text><text x="272" textLength="16" class="color3">&#57520; </text><text x="288" textLength="32" class="foreground">node</text><text x="320" textLength="8" class="background"> </text></g><g id="g6"><text x="0" textLength="168" class="color0"> .../blog/scratchpad </text><text x="168" textLength="8" class="color4">&#57520;</text><text x="176" textLength="96" class="color0"> &#57504; master &#9679; </text><text x="272" textLength="16" class="color3">&#57520; </text><text x="288" textLength="40" class="foreground">node </text><text x="328" textLength="8" class="background"> </text></g><g id="g7"><text x="0" textLength="168" class="color0"> .../blog/scratchpad </text><text x="168" textLength="8" class="color4">&#57520;</text><text x="176" textLength="96" class="color0"> &#57504; master &#9679; </text><text x="272" textLength="16" class="color3">&#57520; </text><text x="288" textLength="48" class="foreground">node e</text><text x="336" textLength="8" class="background"> </text></g><g id="g8"><text x="0" textLength="168" class="color0"> .../blog/scratchpad </text><text x="168" textLength="8" class="color4">&#57520;</text><text x="176" textLength="96" class="color0"> &#57504; master &#9679; </text><text x="272" textLength="16" class="color3">&#57520; </text><text x="288" textLength="56" class="foreground">node ex</text><text x="344" textLength="8" class="background"> </text></g><g id="g9"><text x="0" textLength="168" class="color0"> .../blog/scratchpad </text><text x="168" textLength="8" class="color4">&#57520;</text><text x="176" textLength="96" class="color0"> &#57504; master &#9679; </text><text x="272" textLength="16" class="color3">&#57520; </text><text x="288" textLength="64" class="foreground">node exa</text><text x="352" textLength="8" class="background"> </text></g><g id="g10"><text x="0" textLength="168" class="color0"> .../blog/scratchpad </text><text x="168" textLength="8" class="color4">&#57520;</text><text x="176" textLength="96" class="color0"> &#57504; master &#9679; </text><text x="272" textLength="16" class="color3">&#57520; </text><text x="288" textLength="72" class="foreground">node exam</text><text x="360" textLength="8" class="background"> </text></g><g id="g11"><text x="0" textLength="168" class="color0"> .../blog/scratchpad </text><text x="168" textLength="8" class="color4">&#57520;</text><text x="176" textLength="96" class="color0"> &#57504; master &#9679; </text><text x="272" textLength="16" class="color3">&#57520; </text><text x="288" textLength="80" class="foreground">node examp</text><text x="368" textLength="8" class="background"> </text></g><g id="g12"><text x="0" textLength="168" class="color0"> .../blog/scratchpad </text><text x="168" textLength="8" class="color4">&#57520;</text><text x="176" textLength="96" class="color0"> &#57504; master &#9679; </text><text x="272" textLength="16" class="color3">&#57520; </text><text x="288" textLength="88" class="foreground">node exampl</text><text x="376" textLength="8" class="background"> </text></g><g id="g13"><text x="0" textLength="168" class="color0"> .../blog/scratchpad </text><text x="168" textLength="8" class="color4">&#57520;</text><text x="176" textLength="96" class="color0"> &#57504; master &#9679; </text><text x="272" textLength="16" class="color3">&#57520; </text><text x="288" textLength="96" class="foreground">node example</text><text x="384" textLength="8" class="background"> </text></g><g id="g14"><text x="0" textLength="168" class="color0"> .../blog/scratchpad </text><text x="168" textLength="8" class="color4">&#57520;</text><text x="176" textLength="96" class="color0"> &#57504; master &#9679; </text><text x="272" textLength="16" class="color3">&#57520; </text><text x="288" textLength="104" class="foreground">node example.</text><text x="392" textLength="8" class="background"> </text></g><g id="g15"><text x="0" textLength="168" class="color0"> .../blog/scratchpad </text><text x="168" textLength="8" class="color4">&#57520;</text><text x="176" textLength="96" class="color0"> &#57504; master &#9679; </text><text x="272" textLength="16" class="color3">&#57520; </text><text x="288" textLength="112" class="foreground">node example.j</text><text x="400" textLength="8" class="background"> </text></g><g id="g16"><text x="0" textLength="168" class="color0"> .../blog/scratchpad </text><text x="168" textLength="8" class="color4">&#57520;</text><text x="176" textLength="96" class="color0"> &#57504; master &#9679; </text><text x="272" textLength="16" class="color3">&#57520; </text><text x="288" textLength="120" class="foreground">node example.js</text><text x="408" textLength="8" class="background"> </text></g><g id="g17"><text x="0" textLength="168" class="color0"> .../blog/scratchpad </text><text x="168" textLength="8" class="color4">&#57520;</text><text x="176" textLength="96" class="color0"> &#57504; master &#9679; </text><text x="272" textLength="16" class="color3">&#57520; </text><text x="288" textLength="120" class="foreground">node example.js</text></g><g id="g18"><text x="0" textLength="8" class="background"> </text></g><g id="g19"><text x="0" textLength="8" class="color3">4</text></g><g id="g20"><text x="0" textLength="168" class="color0"> .../blog/scratchpad </text><text x="168" textLength="8" class="color4">&#57520;</text><text x="176" textLength="96" class="color0"> &#57504; master &#9679; </text><text x="272" textLength="16" class="color3">&#57520; </text><text x="288" textLength="32" class="foreground">exit</text></g></defs><g id="screen_view"><g><rect x="0" y="0" width="168" height="17" class="color4"/><rect x="168" y="0" width="104" height="17" class="color3"/><rect x="288" y="0" width="8" height="17" class="foreground"/><use xlink:href="#g1" y="0"/></g><g><rect x="0" y="136" width="168" height="17" class="color4"/><rect x="168" y="136" width="104" height="17" class="color3"/><rect x="296" y="136" width="8" height="17" class="foreground"/><use xlink:href="#g2" y="136"/></g><g><rect x="0" y="272" width="168" height="17" class="color4"/><rect x="168" y="272" width="104" height="17" class="color3"/><rect x="304" y="272" width="8" height="17" class="foreground"/><use xlink:href="#g3" y="272"/></g><g><rect x="0" y="408" width="168" height="17" class="color4"/><rect x="168" y="408" width="104" height="17" class="color3"/><rect x="312" y="408" width="8" height="17" class="foreground"/><use xlink:href="#g4" y="408"/></g><g><rect x="0" y="544" width="168" height="17" class="color4"/><rect x="168" y="544" width="104" height="17" class="color3"/><rect x="320" y="544" width="8" height="17" class="foreground"/><use xlink:href="#g5" y="544"/></g><g><rect x="0" y="680" width="168" height="17" class="color4"/><rect x="168" y="680" width="104" height="17" class="color3"/><rect x="328" y="680" width="8" height="17" class="foreground"/><use xlink:href="#g6" y="680"/></g><g><rect x="0" y="816" width="168" height="17" class="color4"/><rect x="168" y="816" width="104" height="17" class="color3"/><rect x="336" y="816" width="8" height="17" class="foreground"/><use xlink:href="#g7" y="816"/></g><g><rect x="0" y="952" width="168" height="17" class="color4"/><rect x="168" y="952" width="104" height="17" class="color3"/><rect x="344" y="952" width="8" height="17" class="foreground"/><use xlink:href="#g8" y="952"/></g><g><rect x="0" y="1088" width="168" height="17" class="color4"/><rect x="168" y="1088" width="104" height="17" class="color3"/><rect x="352" y="1088" width="8" height="17" class="foreground"/><use xlink:href="#g9" y="1088"/></g><g><rect x="0" y="1224" width="168" height="17" class="color4"/><rect x="168" y="1224" width="104" height="17" class="color3"/><rect x="360" y="1224" width="8" height="17" class="foreground"/><use xlink:href="#g10" y="1224"/></g><g><rect x="0" y="1360" width="168" height="17" class="color4"/><rect x="168" y="1360" width="104" height="17" class="color3"/><rect x="368" y="1360" width="8" height="17" class="foreground"/><use xlink:href="#g11" y="1360"/></g><g><rect x="0" y="1496" width="168" height="17" class="color4"/><rect x="168" y="1496" width="104" height="17" class="color3"/><rect x="376" y="1496" width="8" height="17" class="foreground"/><use xlink:href="#g12" y="1496"/></g><g><rect x="0" y="1632" width="168" height="17" class="color4"/><rect x="168" y="1632" width="104" height="17" class="color3"/><rect x="384" y="1632" width="8" height="17" class="foreground"/><use xlink:href="#g13" y="1632"/></g><g><rect x="0" y="1768" width="168" height="17" class="color4"/><rect x="168" y="1768" width="104" height="17" class="color3"/><rect x="392" y="1768" width="8" height="17" class="foreground"/><use xlink:href="#g14" y="1768"/></g><g><rect x="0" y="1904" width="168" height="17" class="color4"/><rect x="168" y="1904" width="104" height="17" class="color3"/><rect x="400" y="1904" width="8" height="17" class="foreground"/><use xlink:href="#g15" y="1904"/></g><g><rect x="0" y="2040" width="168" height="17" class="color4"/><rect x="168" y="2040" width="104" height="17" class="color3"/><rect x="408" y="2040" width="8" height="17" class="foreground"/><use xlink:href="#g16" y="2040"/></g><g><rect x="0" y="2176" width="168" height="17" class="color4"/><rect x="168" y="2176" width="104" height="17" class="color3"/><use xlink:href="#g17" y="2176"/><rect x="0" y="2193" width="8" height="17" class="foreground"/><use xlink:href="#g18" y="2193"/></g><g><rect x="0" y="2312" width="168" height="17" class="color4"/><rect x="168" y="2312" width="104" height="17" class="color3"/><use xlink:href="#g17" y="2312"/><use xlink:href="#g19" y="2329"/><rect x="0" y="2346" width="8" height="17" class="foreground"/><use xlink:href="#g18" y="2346"/></g><g><rect x="0" y="2448" width="168" height="17" class="color4"/><rect x="168" y="2448" width="104" height="17" class="color3"/><use xlink:href="#g17" y="2448"/><use xlink:href="#g19" y="2465"/><rect x="0" y="2482" width="168" height="17" class="color4"/><rect x="168" y="2482" width="104" height="17" class="color3"/><rect x="288" y="2482" width="8" height="17" class="foreground"/><use xlink:href="#g1" y="2482"/></g><g><rect x="0" y="2584" width="168" height="17" class="color4"/><rect x="168" y="2584" width="104" height="17" class="color3"/><use xlink:href="#g17" y="2584"/><use xlink:href="#g19" y="2601"/><rect x="0" y="2618" width="168" height="17" class="color4"/><rect x="168" y="2618" width="104" height="17" class="color3"/><use xlink:href="#g20" y="2618"/><rect x="0" y="2635" width="8" height="17" class="foreground"/><use xlink:href="#g18" y="2635"/></g></g></svg>
+</svg>

@@ -36,11 +36,11 @@ body {
     margin-right: auto;
 }
 
-
 code {
-    font-family: "CascadiaCode Nerd Font", "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace;
+    font-family: "CascadiaCode Nerd Font", "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace;
     font-size: 0.875em; /* please adjust the ace font size accordingly in editor.js */
-    white-space : pre-wrap !important;
+	font-variant-ligatures: normal;
+	white-space : pre-wrap !important;
 }
 
 .left { float: left; }
