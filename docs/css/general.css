@@ -21,7 +21,7 @@ body {
 
 @font-face {
     font-family: "CascadiaCode Nerd Font";
-    src: url("/ni/fonts/CascadiaCode.Complete.ttf");
+    src: url("/ni/fonts/CascadiaCode.Nerd.Font.ttf");
 }
 
 [class^="language"] {
