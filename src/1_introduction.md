@@ -1,21 +1,32 @@
 # Introduction
 
-This is an [open-source website](https://github.com/DhruvDh/ni) thats written with the intention of getting an average student in Computer Science or the like getting them up to speed on the intricacies of modern web development.
+Hi! I am going to try to teach you how to make Progressive Web Apps!
 
-The making of this website is primarily fueled by my lack of faith in most educational institutions, especially those in third-world countries, being any good at teaching their students and preparing them for a satisfying and productive career in the industry.
+## What are Progressive Web Apps?
 
-I'd prefer to not go on and start ranting in the first page of this website, so rather than elaborate on my reasoning behind the earlier statement I would rather direct you to a chapter in the book "Surely, you're joking Mr. Feynman" [1], where Dr. Richard Feynman - a noble prize winning physicist who is considered by many to be one of the best teachers of his time - gives a speech about his experience teaching in a third-world country (Brazil), and what he thinks about the state of the education system there. I believe very little has changed since.
+I thought I could just find an article explaining what they are and link them here and that would be the end of that. But apparently people have trouble explaining what they are, and I mostly ran across meta-articles explaining [why it's hard to explain what progressive web apps are](https://medium.com/@amberleyjohanna/seriously-though-what-is-a-progressive-web-app-56130600a093) 😆.
 
-> [1] [*O Americana, Outra Vez!* - Surely You're Joking, Mr. Feynman! (Adventures of a Curious Character).](http://sistemas.fciencias.unam.mx/~compcuantica/RICHARD%20P.%20FEYNMAN-SURELY%20YOU%27RE%20JOKING%20MR.%20FEYNMAN.PDF)
-> 
-> Relevant text available in full in [Appendix A](appendix.A.html)
+I guess I'll have to write about it myself.
 
-## Why web development?
+I think most people know what 'apps' are, they're short for applications, and that OS's like `Windows`, `Android`, `iOS`, `Mac`, etc. have apps, which you can use to do something.
 
-Okay, so I don't like the current state of education - how does one go from there to writing about web development?
+For instance, I can use the `Snapchat` app to send pictures or videos to someone, or the `Instagram` app to share pictures. We also all seem to intuitively understand that an developer has to develop an app for each platform (`Android`, `iOS`, etc.) for us to be able to use those apps on those platforms.
 
-In the years following the first launch of the iPhone and the subsequent flurry of Android phones the value proposition of a smartphone application or a web application for any consumer-facing business and increased exponentially.
+For instance, one cannot install `iMessage` on Android, no matter how determined one is to do so, and many of us also understand why that is so, although some don't. I will try to explain that as well.
 
-Now about a decade later there is an excess of job opportunities for someone who is capable developer of applications or 'apps`, and not enough trained talent. So much so that companies have had to start programs to train talent themselves so that they can fill available positions, such as Red Ventures' [Road to Hire](https://www.roadtohire.org/).
+You see, people write applications by writing code, or by programming, and telling the Operating System what to do, or what was done, which in turn tells the processing units in your device what to do, and then things happen!
 
-While I find the intuition and understanding of Computer Science imparted by most educational institutions to be lacking, it is not, obviously, entirely devoid of value. I think it is possible to take the nuggets of information gleaned over time spent in the education system and use them as a foundation for a solid, intuitive, understanding of the what, why, and how of web development; and thusly help readers find a suitable job for themselves.
+For instance, on this page, write this in this code -
+
+```js
+document.getElementById('what-are-progressive-web-apps').style.color = "yellow"
+```
+
+What it would do is that it would tell the browser to change the color of the text of the heading for this section to yellow, and then the browser would communicate this to the Operating system, and then the Operating System would co-ordinate with the hardware in your device attempting to bring about this change and eventually, the color would change.
+
+```mermaid
+graph LR
+    A(Page) --> B(Browser)
+    B(Browser) --> C(OS)
+    C(OS) --> D(Hardware)
+```

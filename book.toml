@@ -6,9 +6,11 @@ src = "src"
 title = "ni"
 
 [output.html]
-default-theme = "ayu"
+default-theme = "light"
 mathjax-support = true
 git-repository-url = "https://github.com/DhruvDh/ni"
+additional-css = ["mermaid.css"]
+additional-js = ["mermaid.min.js", "mermaid.init.js"]
 
 [build]
 build-dir = "docs"

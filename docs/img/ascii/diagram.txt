@@ -1,0 +1,16 @@
+@startuml
+participant "This Page"
+participant Browser
+participant OS
+participant Hardware
+
+
+"This Page" -> Browser: Change this text to yellow
+Browser -> OS: The text rendered here should be yellow
+OS -> Hardware
+Hardware -> OS
+OS -> Hardware
+Hardware -> OS
+OS -> Browser
+Browser -> "This Page"
+@enduml

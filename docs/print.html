@@ -31,17 +31,19 @@
 
         <!-- Custom theme stylesheets -->
         
+        <link rel="stylesheet" href="mermaid.css">
+        
 
         
         <!-- MathJax -->
         <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         
     </head>
-    <body class="ayu">
+    <body class="light">
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "";
-            var default_theme = "ayu";
+            var default_theme = "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -83,7 +85,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="expanded "><a href="1_introduction.html"><strong aria-hidden="true">1.</strong> WIP: Introduction</a></li><li><ol class="section"><li class="expanded "><a href="10_browser.html"><strong aria-hidden="true">1.1.</strong> TODO: Browser stuff</a></li><li class="expanded "><a href="11_reactivity.html"><strong aria-hidden="true">1.2.</strong> Motivation for Reactivity</a></li><li class="expanded "><a href="12_implementing.html"><strong aria-hidden="true">1.3.</strong> WIP: Implementing Reactivity in Javascript</a></li></ol></li><li class="expanded "><a href="2_client.html"><strong aria-hidden="true">2.</strong> TODO: Client stuff</a></li><li class="expanded "><a href="3_server.html"><strong aria-hidden="true">3.</strong> TODO: Server stuff</a></li><li class="expanded "><a href="appendix.html"><strong aria-hidden="true">4.</strong> Appendix</a></li><li><ol class="section"><li class="expanded "><a href="appendix.A.html"><strong aria-hidden="true">4.1.</strong> A. Extract from O Americana, Outra Vez! - Surely You're Joking, Mr. Feynman!</a></li></ol></li></ol>
+                <ol class="chapter"><li class="expanded "><a href="0_preface.html"><strong aria-hidden="true">1.</strong> WIP: Preface</a></li><li><ol class="section"><li class="expanded "><a href="1_introduction.html"><strong aria-hidden="true">1.1.</strong> WIP: Introduction</a></li><li class="expanded "><a href="10_browser.html"><strong aria-hidden="true">1.2.</strong> TODO: Browser stuff</a></li><li class="expanded "><a href="11_reactivity.html"><strong aria-hidden="true">1.3.</strong> Motivation for Reactivity</a></li><li class="expanded "><a href="12_implementing.html"><strong aria-hidden="true">1.4.</strong> WIP: Implementing Reactivity in Javascript</a></li></ol></li><li class="expanded "><a href="2_client.html"><strong aria-hidden="true">2.</strong> TODO: Client stuff</a></li><li class="expanded "><a href="3_server.html"><strong aria-hidden="true">3.</strong> TODO: Server stuff</a></li><li class="expanded "><a href="appendix.html"><strong aria-hidden="true">4.</strong> Appendix</a></li><li><ol class="section"><li class="expanded "><a href="appendix.A.html"><strong aria-hidden="true">4.1.</strong> A. Extract from O Americana, Outra Vez! - Surely You're Joking, Mr. Feynman!</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -102,11 +104,11 @@
                                 <i class="fa fa-paint-brush"></i>
                             </button>
                             <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
                                 <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                                 <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                                 <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
-                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                             </ul>
                             
                             <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
@@ -154,19 +156,40 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#introduction" id="introduction">Introduction</a></h1>
+                        <h1><a class="header" href="#preface" id="preface">Preface</a></h1>
+<blockquote>
+<p>This page lays out the reason this website exists, and how it attempts to help a prospective student. If you're here just to learn, feel free to skip this page and go on to <a href="1_introduction.html">the next one</a>.</p>
+</blockquote>
 <p>This is an <a href="https://github.com/DhruvDh/ni">open-source website</a> thats written with the intention of getting an average student in Computer Science or the like getting them up to speed on the intricacies of modern web development.</p>
 <p>The making of this website is primarily fueled by my lack of faith in most educational institutions, especially those in third-world countries, being any good at teaching their students and preparing them for a satisfying and productive career in the industry.</p>
 <p>I'd prefer to not go on and start ranting in the first page of this website, so rather than elaborate on my reasoning behind the earlier statement I would rather direct you to a chapter in the book &quot;Surely, you're joking Mr. Feynman&quot; [1], where Dr. Richard Feynman - a noble prize winning physicist who is considered by many to be one of the best teachers of his time - gives a speech about his experience teaching in a third-world country (Brazil), and what he thinks about the state of the education system there. I believe very little has changed since.</p>
 <blockquote>
-<p>[1] <a href="http://sistemas.fciencias.unam.mx/%7Ecompcuantica/RICHARD%20P.%20FEYNMAN-SURELY%20YOU%27RE%20JOKING%20MR.%20FEYNMAN.PDF"><em>O Americana, Outra Vez!</em> - Surely You're Joking, Mr. Feynman! (Adventures of a Curious Character).</a></p>
-<p>Relevant text available in full in <a href="appendix.A.html">Appendix A</a></p>
+<p>[1] <a href="http://sistemas.fciencias.unam.mx/%7Ecompcuantica/RICHARD%20P.%20FEYNMAN-SURELY%20YOU%27RE%20JOKING%20MR.%20FEYNMAN.PDF"><em>O Americana, Outra Vez!</em> - Surely You're Joking, Mr. Feynman! (Adventures of a Curious Character).</a>
+Relevant text available in full in <a href="appendix.A.html">Appendix A</a></p>
 </blockquote>
 <h2><a class="header" href="#why-web-development" id="why-web-development">Why web development?</a></h2>
 <p>Okay, so I don't like the current state of education - how does one go from there to writing about web development?</p>
 <p>In the years following the first launch of the iPhone and the subsequent flurry of Android phones the value proposition of a smartphone application or a web application for any consumer-facing business and increased exponentially.</p>
 <p>Now about a decade later there is an excess of job opportunities for someone who is capable developer of applications or 'apps`, and not enough trained talent. So much so that companies have had to start programs to train talent themselves so that they can fill available positions, such as Red Ventures' <a href="https://www.roadtohire.org/">Road to Hire</a>.</p>
-<p>While I find the intuition and understanding of Computer Science imparted by most educational institutions to be lacking, it is not, obviously, entirely devoid of value. I think it is possible to take the nuggets of information gleaned over time spent in the education system and use them as a foundation for a solid, intuitive, understanding of the what, why, and how of web development; and thusly help readers find a suitable job for themselves.</p>
+<p>While I find the education imparted by most institutions to be lacking, it is not, obviously, entirely devoid of value. I think it is possible to take the nuggets of information gleaned over time spent in the education system and use them as a foundation for a solid, intuitive, understanding of the what, why, and how of web development; and thusly help readers find a suitable job for themselves.</p>
+<h1><a class="header" href="#introduction" id="introduction">Introduction</a></h1>
+<p>Hi! I am going to try to teach you how to make Progressive Web Apps!</p>
+<h2><a class="header" href="#what-are-progressive-web-apps" id="what-are-progressive-web-apps">What are Progressive Web Apps?</a></h2>
+<p>I thought I could just find an article explaining what they are and link them here and that would be the end of that. But apparently people have trouble explaining what they are, and I mostly ran across meta-articles explaining <a href="https://medium.com/@amberleyjohanna/seriously-though-what-is-a-progressive-web-app-56130600a093">why it's hard to explain what progressive web apps are</a> 😆.</p>
+<p>I guess I'll have to write about it myself.</p>
+<p>I think most people know what 'apps' are, they're short for applications, and that OS's like <code>Windows</code>, <code>Android</code>, <code>iOS</code>, <code>Mac</code>, etc. have apps, which you can use to do something.</p>
+<p>For instance, I can use the <code>Snapchat</code> app to send pictures or videos to someone, or the <code>Instagram</code> app to share pictures. We also all seem to intuitively understand that an developer has to develop an app for each platform (<code>Android</code>, <code>iOS</code>, etc.) for us to be able to use those apps on those platforms.</p>
+<p>For instance, one cannot install <code>iMessage</code> on Android, no matter how determined one is to do so, and many of us also understand why that is so, although some don't. I will try to explain that as well.</p>
+<p>You see, people write applications by writing code, or by programming, and telling the Operating System what to do, or what was done, which in turn tells the processing units in your device what to do, and then things happen!</p>
+<p>For instance, on this page, write this in this code -</p>
+<pre><code class="language-js">document.getElementById('what-are-progressive-web-apps').style.color = &quot;yellow&quot;
+</code></pre>
+<p>What it would do is that it would tell the browser to change the color of the text of the heading for this section to yellow, and then the browser would communicate this to the Operating system, and then the Operating System would co-ordinate with the hardware in your device attempting to bring about this change and eventually, the color would change.</p>
+<pre><code class="language-mermaid">graph LR
+    A(Page) --&gt; B(Browser)
+    B(Browser) --&gt; C(OS)
+    C(OS) --&gt; D(Hardware)
+</code></pre>
 <h1><a class="header" href="#todo-browser-stuff" id="todo-browser-stuff">TODO: Browser stuff</a></h1>
 <h1><a class="header" href="#motivation-for-reactivity" id="motivation-for-reactivity">Motivation for Reactivity</a></h1>
 <p>Let's say that one fine afternoon we decide to create two variables <code>a</code> and <code>b</code>, both of which we set to <code>2</code>, and we make a third variable <code>c</code> which we decree should be equal to the sum of <code>a</code> and <code>b</code>. If we were doing all this in Javascript, what we write should end up looking like this -</p>
@@ -329,6 +352,10 @@ through the grapevine that the reaction of somebody in the State Department was,
         <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="mermaid.min.js"></script>
+        
+        <script type="text/javascript" src="mermaid.init.js"></script>
         
 
         

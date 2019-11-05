@@ -12,12 +12,11 @@ for thing in os.listdir('.'):
     if thing.endswith('.md') or thing.endswith(".MD"):
         with open(path, 'r+') as file:
             text = file.read()
-            
-            # print(f"{path}: {len(text.split())} words.")
+            print(f"{path}: {len(text.split())} words.")
             count += len(text.split())
 
 print(f"{count} words.")
 
 with open('../words', 'r') as f:
     old_count = int(f.read())
-    print(f"..added {count - old_count} words since last build.")
+    print(f"..added {old_count - count} words since last build.")
