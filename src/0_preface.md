@@ -2,16 +2,24 @@
 
 > This page lays out the reason this website exists, and how it attempts to help a prospective student. If you're here just to learn, feel free to skip this page and go on to [the next one](1_introduction.html).
 
-This is an [open-source website](https://github.com/DhruvDh/ni) thats written with the intention of getting an average student in Computer Science or the like getting them up to speed on the intricacies of modern web development.
+This is an [open-source website](https://github.com/DhruvDh/ni) that is written with the intention of getting an average student of Computer Science or the like getting them up to speed on the intricacies of modern web development.
 
-The making of this website is primarily fueled by my lack of faith in most educational institutions, especially those in third-world countries, being any good at teaching their students and preparing them for a satisfying and productive career in the industry.
+I think that teaching something, particularly computer science, is not as easy of a task to accomplish as most teachers and professors tend to think of it as, and neither is learning it. And as a result of this many students find them in a situation where they diligently did all that tasks that lead to academic success in the program they were enrolled in and yet they do not feel like they have attained the required skills to perform or land the job that they are expected to land. 
 
-I'd prefer to not go on and start ranting in the first page of this website, so rather than elaborate on my reasoning behind the earlier statement I would rather direct you to a chapter in the book "Surely, you're joking Mr. Feynman" [1], where Dr. Richard Feynman - a noble prize winning physicist who is considered by many to be one of the best teachers of his time - gives a speech about his experience teaching in a third-world country (Brazil), and what he thinks about the state of the education system there. I believe very little has changed since.
+For many students, the cracks in the confidence they have in their own skills start appearing way before it is time to look for a job, and they have trouble doing coursework that others seem to be able to _just do_ without too much of a fuss. They start to think that there is something lacking within them, and that this lacking is the reason they can't perform as well as they wish to.
+
+I happen to think that more often than not, this lacking is not within a student, but rather in the way they are taught and encouraged to think about things. And I also think this situation tends to be a reality more often in third world countries, where education systems tend to believe that they cannot afford to be idealistic and compromise on the education they provide to their students. 
+
+As to what exactly I think it is that is lacking, I am not sure this is the best place to talk about such things. Instead, if you are curious, I would direct you towards a chapter in the book "Surely, you're joking Mr. Feynman" [1], where Dr. Richard Feynman - a noble prize winning physicist who is considered by many to be one of the best teachers of his time - gives a speech about his experience teaching in a third-world country (Brazil), and what he thinks about the state of the education system there. I believe not much has changed since.
 
 > [1] [*O Americana, Outra Vez!* - Surely You're Joking, Mr. Feynman! (Adventures of a Curious Character).](http://sistemas.fciencias.unam.mx/~compcuantica/RICHARD%20P.%20FEYNMAN-SURELY%20YOU%27RE%20JOKING%20MR.%20FEYNMAN.PDF)
 > Relevant text available in full in [Appendix A](appendix.A.html)
 
-## Why web development?
+## WIP: Teaching Philosophy
+
+
+
+## WIP: Why web development?
 
 Okay, so I don't like the current state of education - how does one go from there to writing about web development?
 
