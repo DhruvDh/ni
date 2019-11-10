@@ -11,6 +11,7 @@ mathjax-support = true
 git-repository-url = "https://github.com/DhruvDh/ni"
 additional-css = ["mermaid.css"]
 additional-js = ["mermaid.min.js", "mermaid.init.js"]
+google-analytics = "UA-92382442-2" 
 
 [build]
 build-dir = "docs"
