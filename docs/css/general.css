@@ -1,167 +1,190 @@
 /* Base styles and content styles */
 
-@import 'variables.css';
+@import "variables.css";
 
 html {
-    font-family: "Open Sans", sans-serif;
-    color: var(--fg);
-    background-color: var(--bg);
-    text-size-adjust: none;
+  font-family: "Open Sans", sans-serif;
+  color: var(--fg);
+  background-color: var(--bg);
+  text-size-adjust: none;
 }
 
 body {
-    margin: 0;
-    font-size: 1rem;
-    overflow-x: hidden;
+  margin: 0;
+  font-size: 1rem;
+  overflow-x: hidden;
 }
 
 .fa-copy.fa {
-    display: none;
+  display: none;
 }
 
 @font-face {
-    font-family: "CascadiaCode Nerd Font";
-    src: url("/ni/fonts/CascadiaCode.Nerd.Font.ttf");
+  font-family: "CascadiaCode Nerd Font";
+  src: url("/ni/fonts/CascadiaCode.Nerd.Font.ttf");
 }
 
 [class^="language"] {
-    padding: 1.2em 1.4em !important;
-    line-height: 1.3rem !important;
+  padding: 1.2em 1.4em !important;
+  line-height: 1.3rem !important;
 }
 
-.content img { 
-    max-width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.content img {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 code {
-    font-family: "CascadiaCode Nerd Font", "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace;
-    font-size: 0.875em; /* please adjust the ace font size accordingly in editor.js */
-	font-variant-ligatures: normal;
-	white-space : pre-wrap !important;
+  font-family: "CascadiaCode Nerd Font", "Source Code Pro", Consolas,
+    "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace;
+  font-size: 0.875em; /* please adjust the ace font size accordingly in editor.js */
+  font-variant-ligatures: normal;
+  white-space: pre-wrap;
 }
 
-.left { float: left; }
-.right { float: right; }
-.hidden { display: none; }
-.play-button.hidden { display: none; }
+.[class$="diagram"] {
+  white-space: pre !important;
+}
 
-h2, h3 { margin-top: 2.5em; }
-h4, h5 { margin-top: 2em; }
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.hidden {
+  display: none;
+}
+.play-button.hidden {
+  display: none;
+}
+
+h2,
+h3 {
+  margin-top: 2.5em;
+}
+h4,
+h5 {
+  margin-top: 2em;
+}
 
 .header + .header h3,
 .header + .header h4,
 .header + .header h5 {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 h1 a.header:target::before,
 h2 a.header:target::before,
 h3 a.header:target::before,
 h4 a.header:target::before {
-    display: inline-block;
-    content: "»";
-    margin-left: -30px;
-    width: 30px;
+  display: inline-block;
+  content: "»";
+  margin-left: -30px;
+  width: 30px;
 }
 
 .page {
-    outline: 0;
-    padding: 0 var(--page-padding);
+  outline: 0;
+  padding: 0 var(--page-padding);
 }
 .page-wrapper {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 .js:not(.sidebar-resizing) .page-wrapper {
-    transition: margin-left 0.3s ease, transform 0.3s ease; /* Animation: slide away */
+  transition: margin-left 0.3s ease, transform 0.3s ease; /* Animation: slide away */
 }
 
 .content {
-    overflow-y: auto;
-    padding: 0 15px;
-    padding-bottom: 50px;
+  overflow-y: auto;
+  padding: 0 15px;
+  padding-bottom: 50px;
 }
 .content main {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: var(--content-max-width);
-    align-content: center
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--content-max-width);
+  align-content: center;
 }
-.content a { text-decoration: none; }
-.content a:hover { text-decoration: underline; }
+.content a {
+  text-decoration: none;
+}
+.content a:hover {
+  text-decoration: underline;
+}
 
 .content .header:link,
 .content .header:visited {
-    color: var(--fg);
+  color: var(--fg);
 }
 .content .header:link,
 .content .header:visited:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 table {
-    margin: 0 auto;
-    border-collapse: collapse;
+  margin: 0 auto;
+  border-collapse: collapse;
 }
 table td {
-    padding: 3px 20px;
-    border: 1px var(--table-border-color) solid;
+  padding: 3px 20px;
+  border: 1px var(--table-border-color) solid;
 }
 table thead {
-    background: var(--table-header-bg);
+  background: var(--table-header-bg);
 }
 table thead td {
-    font-weight: 700;
-    border: none;
+  font-weight: 700;
+  border: none;
 }
 table thead tr {
-    border: 1px var(--table-header-bg) solid;
+  border: 1px var(--table-header-bg) solid;
 }
 /* Alternate background colors for rows */
 table tbody tr:nth-child(2n) {
-    background: var(--table-alternate-bg);
+  background: var(--table-alternate-bg);
 }
-
 
 blockquote {
-    margin: 20px 0;
-    padding: 0 20px;
-    color: var(--fg);
-    background-color: var(--quote-bg);
-    border-top: .1em solid var(--quote-border);
-    border-bottom: .1em solid var(--quote-border);
+  margin: 20px 0;
+  padding: 0 20px;
+  color: var(--fg);
+  background-color: var(--quote-bg);
+  border-top: 0.1em solid var(--quote-border);
+  border-bottom: 0.1em solid var(--quote-border);
 }
-
 
 :not(.footnote-definition) + .footnote-definition,
 .footnote-definition + :not(.footnote-definition) {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 .footnote-definition {
-    font-size: 0.9em;
-    margin: 0.5em 0;
+  font-size: 0.9em;
+  margin: 0.5em 0;
 }
 .footnote-definition p {
-    display: inline;
+  display: inline;
 }
 
 .tooltiptext {
-    position: absolute;
-    visibility: hidden;
-    color: #fff;
-    background-color: #333;
-    transform: translateX(-50%); /* Center by moving tooltip 50% of its width left */
-    left: -8px; /* Half of the width of the icon */
-    top: -35px;
-    font-size: 0.8em;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 8px;
-    margin: 5px;
-    z-index: 1000;
+  position: absolute;
+  visibility: hidden;
+  color: #fff;
+  background-color: #333;
+  transform: translateX(
+    -50%
+  ); /* Center by moving tooltip 50% of its width left */
+  left: -8px; /* Half of the width of the icon */
+  top: -35px;
+  font-size: 0.8em;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 8px;
+  margin: 5px;
+  z-index: 1000;
 }
 .tooltipped .tooltiptext {
-    visibility: visible;
+  visibility: visible;
 }

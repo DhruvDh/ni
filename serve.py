@@ -13,6 +13,7 @@ for thing in os.listdir('.'):
 
     if thing.endswith('.md') or thing.endswith(".MD"):
         with open(path, 'r+',  encoding='utf8') as file:
+            print(f"openning {path}")
             text = file.read()
 
             for a_thing in img_tag.findall(text):
@@ -35,6 +36,7 @@ for thing in os.listdir('.'):
     if thing.endswith('.svg'):
         print(f"found file {path}")
         with open(path, 'r+', encoding='utf8') as file:
+            print(f"openning {path}")
             text = file.read()
             text = text.replace("font-family: 'DejaVu Sans Mono', monospace;",
                          'font-family: "CascadiaCode Nerd Font", "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace; font-variant-ligatures: normal;' )
