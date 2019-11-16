@@ -44,7 +44,7 @@ code {
   white-space: pre-wrap;
 }
 
-.[class$="diagram"] {
+[class^="language-diagram"] {
   white-space: pre !important;
 }
 
