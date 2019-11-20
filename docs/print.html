@@ -158,6 +158,8 @@
                     <main>
                         <h1><a class="header" href="#preface" id="preface">Preface</a></h1>
 <blockquote>
+<p>Everything on this website is still a Work in Progress and not ready for
+consumption.</p>
 <p>This page lays out the reason this website exists, and how it attempts to help. If you're here just to learn, feel free to skip this page and go on to <a href="1_introduction.html">the next one</a>.</p>
 </blockquote>
 <p>This is an <a href="https://github.com/DhruvDh/ni">open-source website</a> that is written with the intention of getting an average student of Computer Science or the like getting them up to speed on the intricacies of modern web development.</p>
@@ -166,10 +168,10 @@
 <p>I happen to think that more often than not, this lacking is not within a student, but rather in the way they are taught and encouraged to think about things. And I also think this situation tends to be a reality more often in third world countries, where education systems tend to believe that they cannot afford to be idealistic and compromise on the education they provide.</p>
 <p>As to what exactly I think it is that is lacking, I am not sure this is the best place to talk about such things. Instead, if you are curious, I would direct you towards a chapter in the book &quot;Surely, you're joking Mr. Feynman&quot; <code>[1]</code>, where Dr. Richard Feynman - a noble prize winning physicist who is considered by many to be one of the best teachers of his time - gives a speech about his experience teaching in a third-world country (Brazil), and what he thinks about the state of the education system there. I believe not much has changed since.</p>
 <blockquote>
-<p>[1]<a href="http://sistemas.fciencias.unam.mx/%7Ecompcuantica/RICHARD%20P.%20FEYNMAN-SURELY%20YOU%27RE%20JOKING%20MR.%20FEYNMAN.PDF"><em>o americana, outra vez!</em> - surely you're joking, mr. feynman! (adventures of a curious character).</a>
+<p>[1]<a href="http://sistemas.fciencias.unam.mx/%7Ecompcuantica/RICHARD%20P.%20FEYNMAN-SURELY%20YOU%27RE%20JOKING%20MR.%20FEYNMAN.PDF"><em>o Americana, Outra Vez!</em> - Surely You're Joking, Mr. Feynman! (Adventures of a Curious Character).</a>
 Relevant text available in full <a href="appendix.A.html">Appendix A</a></p>
 </blockquote>
-<h2><a class="header" href="#teaching-philosophy" id="teaching-philosophy">Teaching Philosophy</a></h2>
+<h2><a class="header" href="#wip-teaching-philosophy" id="wip-teaching-philosophy">WIP: Teaching Philosophy</a></h2>
 <p>There is no shortage of resources to teach yourself web development from. I do not like most of them though, they tend to be a little to algorithmic.</p>
 <p>Consider <a href="https://www.w3schools.com/">w3schools</a>, they're the most popular resource for learning the fundamentals of web development (ranked <code>#143</code> among <em>all websites</em> globally by traffic, as of 10/29/2019 <code>[1]</code>), and most of their tutorials are of the form -</p>
 <ol>
@@ -188,37 +190,37 @@ Relevant text available in full <a href="appendix.A.html">Appendix A</a></p>
 <li>Do <code>document.getElementByID(id).innerHTML = newHTML</code></li>
 </ol>
 <p>What a student that learns this way ends up with is a large set of how-to's in their head which they attempt to recall when the appropriate situation arises.</p>
-<pre><code class="language-diagram">  +-----------------------------------------------------------+
-  | Students's head                                           |
-  |===========================================================|
-  |   +----------------------------------------------------+  |
-  |   | Making websites                                    |  |
-  |   |----------------------------------------------------|  |
-  |   |  +----------------------------------------------+  |  |
-  |   |  | HTML/JavaScript                              |  |  |
-  |   |  |----------------------------------------------|  |  |
-  |   |  |  +----------------------------------------+  |  |  |
-  |   |  |  |  Write to HTML                         |  |  |  |
-  |   |  |  |----------------------------------------|  |  |  |
-  |   |  |  |           document.write()             |  |  |  |
-  |   |  |  |   o --------------------------------&gt;o |  |  |  |
-  |   |  |  +----------------------------------------+  |  |  |
-  |   |  |  +----------------------------------------+  |  |  |
-  |   |  |  |  Change HTML content                   |  |  |  |
-  |   |  |  |----------------------------------------|  |  |  |
-  |   |  |  |  document.getElementByID().innerHTML   |  |  |  |
-  |   |  |  | o ----------------------------------&gt;o |  |  |  |
-  |   |  |  +----------------------------------------+  |  |  |
-  |   |  |      ...                                     |  |  |
-  |   |  |  +----------------------------------------+  |  |  |
-  |   |  |  |  (Misc. info)                          |  |  |  |
-  |   |  |  +----------------------------------------+  |  |  |
-  |   |  |                                              |  |  |
-  |   |  +----------------------------------------------+  |  |
-  |   |                                                    |  |
-  |   +----------------------------------------------------+  |
-  |                                                           |
-  +-----------------------------------------------------------+
+<pre><code class="language-diagram">  ┌───────────────────────────────────────────────────────────┐
+  │ Student's head                                            │
+  │───────────────────────────────────────────────────────────│
+  │   ┌────────────────────────────────────────────────────┐  │
+  │   │ Making websites                                    │  │
+  │   │────────────────────────────────────────────────────│  │
+  │   │  ┌──────────────────────────────────────────────┐  │  │
+  │   │  │ HTML/JavaScript                              │  │  │
+  │   │  │──────────────────────────────────────────────│  │  │
+  │   │  │  ┌────────────────────────────────────────┐  │  │  │
+  │   │  │  │  Write to HTML                         │  │  │  │
+  │   │  │  │────────────────────────────────────────│  │  │  │
+  │   │  │  │           document.write()             │  │  │  │
+  │   │  │  │   o─────────────────────────────────&gt;o │  │  │  │
+  │   │  │  ├────────────────────────────────────────┤  │  │  │
+  │   │  │  ├────────────────────────────────────────┤  │  │  │
+  │   │  │  │  Change HTML content                   │  │  │  │
+  │   │  │  │────────────────────────────────────────│  │  │  │
+  │   │  │  │  document.getElementByID().innerHTML   │  │  │  │
+  │   │  │  │ o───────────────────────────────────&gt;o │  │  │  │
+  │   │  │  └────────────────────────────────────────┘  │  │  │
+  │   │  │      ...                                     │  │  │
+  │   │  │  ┌────────────────────────────────────────┐  │  │  │
+  │   │  │  │  (Misc. info)                          │  │  │  │
+  │   │  │  └────────────────────────────────────────┘  │  │  │
+  │   │  │                                              │  │  │
+  │   │  └──────────────────────────────────────────────┘  │  │
+  │   │                                                    │  │
+  │   └────────────────────────────────────────────────────┘  │
+  │                                                           │
+  └───────────────────────────────────────────────────────────┘
 </code></pre>
 <p>The annoying part about these tutorials is how quickly they take you from not knowing much about something to being able to visibly make things happen and feel like you've accomplished something, while only giving you a very shallow understanding on things.</p>
 <p>This is very much like how most elementary math teachers approach teaching -</p>
@@ -227,10 +229,10 @@ Relevant text available in full <a href="appendix.A.html">Appendix A</a></p>
 <li>Do <code>length * breath</code></li>
 </ol>
 <blockquote>
-<p>[1]<a href="https://www.alexa.com/siteinfo/w3schools.com">traffic metrics - alexa rank of w3schools.com</a>.
+<p>[1]<a href="https://www.alexa.com/siteinfo/w3schools.com">Traffic Metrics - Alexa Rank of w3schools.com</a>.
 Wayback machine snapshot of the page as of 10/29/2019 <a href="https://web.archive.org/web/20191029095310/https://www.alexa.com/siteinfo/w3schools.com">here</a>.</p>
 </blockquote>
-<h2><a class="header" href="#teaching-philosophy-1" id="teaching-philosophy-1">Teaching Philosophy</a></h2>
+<h2><a class="header" href="#wip-teaching-philosophy-1" id="wip-teaching-philosophy-1">WIP: Teaching Philosophy</a></h2>
 <p>Most people tend to think of learning as being equivalent to going from a state of not being able to do something to a state where one is capable of doing something. Rather, I've always thought that the act of learning is to go from a state of not being able to figure out how to do something - and therefore being incapable of doing it - to a state of knowing enough to be able to figure out how to do something.</p>
 <p>This is a small but important distinction, and the latter is also how this website will attempt to teach. Rather than</p>
 <p>Both ways of thinking about learning do seem to end with one transitioning to a state of being able to do something, and as such there are many who think of them as being the same thing.</p>

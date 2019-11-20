@@ -20,13 +20,13 @@ body {
 }
 
 @font-face {
-  font-family: "CascadiaCode Nerd Font";
-  src: url("/ni/fonts/CascadiaCode.Nerd.Font.ttf");
+  font-family: "Delugia Nerd Font";
+  src: url("/ni/fonts/Delugia.Nerd.Font.Complete.ttf");
 }
 
 [class^="language"] {
   padding: 1.2em 1.4em !important;
-  line-height: 1.3rem !important;
+  line-height: 1.3rem;
 }
 
 .content img {
@@ -37,8 +37,7 @@ body {
 }
 
 code {
-  font-family: "CascadiaCode Nerd Font", "Source Code Pro", Consolas,
-    "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace;
+  font-family: "Delugia Nerd Font", Consolas, monospace;
   font-size: 0.875em; /* please adjust the ace font size accordingly in editor.js */
   font-variant-ligatures: normal;
   white-space: pre-wrap;
@@ -46,6 +45,8 @@ code {
 
 [class^="language-diagram"] {
   white-space: pre !important;
+  font-size: 1em; !important;
+  line-height: 1em !important;
 }
 
 .left {

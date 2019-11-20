@@ -1,5 +1,7 @@
 # Preface
-
+> Everything on this website is still a Work in Progress and not ready for
+> consumption.
+>
 > This page lays out the reason this website exists, and how it attempts to help. If you're here just to learn, feel free to skip this page and go on to [the next one](1_introduction.html).
 
 This is an [open-source website](https://github.com/DhruvDh/ni) that is written with the intention of getting an average student of Computer Science or the like getting them up to speed on the intricacies of modern web development.
@@ -12,10 +14,10 @@ I happen to think that more often than not, this lacking is not within a student
 
 As to what exactly I think it is that is lacking, I am not sure this is the best place to talk about such things. Instead, if you are curious, I would direct you towards a chapter in the book "Surely, you're joking Mr. Feynman" `[1]`, where Dr. Richard Feynman - a noble prize winning physicist who is considered by many to be one of the best teachers of his time - gives a speech about his experience teaching in a third-world country (Brazil), and what he thinks about the state of the education system there. I believe not much has changed since.
 
-> [1][*o americana, outra vez!* - surely you're joking, mr. feynman! (adventures of a curious character).](http://sistemas.fciencias.unam.mx/~compcuantica/RICHARD%20P.%20FEYNMAN-SURELY%20YOU%27RE%20JOKING%20MR.%20FEYNMAN.PDF)
+> [1][*o Americana, Outra Vez!* - Surely You're Joking, Mr. Feynman! (Adventures of a Curious Character).](http://sistemas.fciencias.unam.mx/~compcuantica/RICHARD%20P.%20FEYNMAN-SURELY%20YOU%27RE%20JOKING%20MR.%20FEYNMAN.PDF)
 > Relevant text available in full [Appendix A](appendix.A.html)
-
-## Teaching Philosophy
+    
+## WIP: Teaching Philosophy
 
 There is no shortage of resources to teach yourself web development from. I do not like most of them though, they tend to be a little to algorithmic.
 
@@ -38,37 +40,37 @@ Later in the page they go -
 What a student that learns this way ends up with is a large set of how-to's in their head which they attempt to recall when the appropriate situation arises.
 
 ```diagram
-  +-----------------------------------------------------------+
-  | Students's head                                           |
-  |===========================================================|
-  |   +----------------------------------------------------+  |
-  |   | Making websites                                    |  |
-  |   |----------------------------------------------------|  |
-  |   |  +----------------------------------------------+  |  |
-  |   |  | HTML/JavaScript                              |  |  |
-  |   |  |----------------------------------------------|  |  |
-  |   |  |  +----------------------------------------+  |  |  |
-  |   |  |  |  Write to HTML                         |  |  |  |
-  |   |  |  |----------------------------------------|  |  |  |
-  |   |  |  |           document.write()             |  |  |  |
-  |   |  |  |   o -------------------------------->o |  |  |  |
-  |   |  |  +----------------------------------------+  |  |  |
-  |   |  |  +----------------------------------------+  |  |  |
-  |   |  |  |  Change HTML content                   |  |  |  |
-  |   |  |  |----------------------------------------|  |  |  |
-  |   |  |  |  document.getElementByID().innerHTML   |  |  |  |
-  |   |  |  | o ---------------------------------->o |  |  |  |
-  |   |  |  +----------------------------------------+  |  |  |
-  |   |  |      ...                                     |  |  |
-  |   |  |  +----------------------------------------+  |  |  |
-  |   |  |  |  (Misc. info)                          |  |  |  |
-  |   |  |  +----------------------------------------+  |  |  |
-  |   |  |                                              |  |  |
-  |   |  +----------------------------------------------+  |  |
-  |   |                                                    |  |
-  |   +----------------------------------------------------+  |
-  |                                                           |
-  +-----------------------------------------------------------+
+  ┌───────────────────────────────────────────────────────────┐
+  │ Student's head                                            │
+  │───────────────────────────────────────────────────────────│
+  │   ┌────────────────────────────────────────────────────┐  │
+  │   │ Making websites                                    │  │
+  │   │────────────────────────────────────────────────────│  │
+  │   │  ┌──────────────────────────────────────────────┐  │  │
+  │   │  │ HTML/JavaScript                              │  │  │
+  │   │  │──────────────────────────────────────────────│  │  │
+  │   │  │  ┌────────────────────────────────────────┐  │  │  │
+  │   │  │  │  Write to HTML                         │  │  │  │
+  │   │  │  │────────────────────────────────────────│  │  │  │
+  │   │  │  │           document.write()             │  │  │  │
+  │   │  │  │   o─────────────────────────────────>o │  │  │  │
+  │   │  │  ├────────────────────────────────────────┤  │  │  │
+  │   │  │  ├────────────────────────────────────────┤  │  │  │
+  │   │  │  │  Change HTML content                   │  │  │  │
+  │   │  │  │────────────────────────────────────────│  │  │  │
+  │   │  │  │  document.getElementByID().innerHTML   │  │  │  │
+  │   │  │  │ o───────────────────────────────────>o │  │  │  │
+  │   │  │  └────────────────────────────────────────┘  │  │  │
+  │   │  │      ...                                     │  │  │
+  │   │  │  ┌────────────────────────────────────────┐  │  │  │
+  │   │  │  │  (Misc. info)                          │  │  │  │
+  │   │  │  └────────────────────────────────────────┘  │  │  │
+  │   │  │                                              │  │  │
+  │   │  └──────────────────────────────────────────────┘  │  │
+  │   │                                                    │  │
+  │   └────────────────────────────────────────────────────┘  │
+  │                                                           │
+  └───────────────────────────────────────────────────────────┘
 ```
 
 The annoying part about these tutorials is how quickly they take you from not knowing much about something to being able to visibly make things happen and feel like you've accomplished something, while only giving you a very shallow understanding on things.
@@ -78,10 +80,10 @@ This is very much like how most elementary math teachers approach teaching -
 1. Imagine you want to find the area of a rectangle.
 2. Do `length * breath`
 
-> [1][traffic metrics - alexa rank of w3schools.com](https://www.alexa.com/siteinfo/w3schools.com).
+> [1][Traffic Metrics - Alexa Rank of w3schools.com](https://www.alexa.com/siteinfo/w3schools.com).
 > Wayback machine snapshot of the page as of 10/29/2019 [here](https://web.archive.org/web/20191029095310/https://www.alexa.com/siteinfo/w3schools.com).
 
-## Teaching Philosophy
+## WIP: Teaching Philosophy
 
 Most people tend to think of learning as being equivalent to going from a state of not being able to do something to a state where one is capable of doing something. Rather, I've always thought that the act of learning is to go from a state of not being able to figure out how to do something - and therefore being incapable of doing it - to a state of knowing enough to be able to figure out how to do something.
 
