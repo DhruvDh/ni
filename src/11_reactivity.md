@@ -11,7 +11,7 @@ let c = a + b;
 
 Now, on that fine afternoon, if we also decide to print out the value of `c` with a function like `console.log(c)` and run this little script with a Javascript runtime like [Node](https://nodejs.org/en/), we would see the sum of `a` and `b` printed out -
 
-![Output](/img/aplusb_1.svg)
+![Output](/ni/img/aplusb_1.svg)
 
 
 Which is `2 + 2` and thusly `4`. At this point if, rather miraculously, we still want to play around with our variables and haven't opened Netflix in a new tab, then we might try changing the the value of either `a` or `b` - just for some mischief.
@@ -31,7 +31,7 @@ console.log(c);
 
 Which if we run, again in a Javascript runtime like Node, would leave us with this output -
 
-![Output](/img/aplusb_2.svg)
+![Output](/ni/img/aplusb_2.svg)
 
 Uhm, hold up. Yeah, this afternoon sucks but how is it that `c` prints out as `4` the second time around too? 
 
@@ -56,7 +56,7 @@ document
 
 Here `"Liked by " + randomLiker.name + " and " + noOfLikers + " others"` is what generates the messages like the following -
 
-![Liked by message](/img/liked_by_message.png)
+![Liked by message](/ni/img/liked_by_message.png)
 
 While what `document.getElementByID("NameOfPlaceWhereLikesAreShown").text` does is that it finds the place where we need to display the "liked by" message and set's its text to be equal to the "liked by" message we just generated.
 

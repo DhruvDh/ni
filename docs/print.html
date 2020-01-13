@@ -220,7 +220,8 @@ much about that; you'll just have to trust me for now.</p>
 <p><em>Good luck!</em> <br />
 <em>- Dhruv Dhamani</em></p>
 <h1><a class="header" href="#introduction" id="introduction">Introduction</a></h1>
-<p>Hi! I am going to try to teach you how to make Progressive Web Apps!</p>
+<p>Hey! <br />
+Here starts your journey on learning to make Progressive Web Apps!</p>
 <h2><a class="header" href="#what-are-progressive-web-apps" id="what-are-progressive-web-apps">What are Progressive Web Apps?</a></h2>
 <p>I thought I could just find an article explaining what they are and link them here and that would be the end of that. But apparently people have trouble explaining what they are, and I mostly ran across meta-articles explaining <a href="https://medium.com/@amberleyjohanna/seriously-though-what-is-a-progressive-web-app-56130600a093">why it's hard to explain what progressive web apps are</a> 😆.</p>
 <p>I guess I'll have to write about it myself.</p>
@@ -246,7 +247,7 @@ let b = 2;
 let c = a + b;
 </code></pre>
 <p>Now, on that fine afternoon, if we also decide to print out the value of <code>c</code> with a function like <code>console.log(c)</code> and run this little script with a Javascript runtime like <a href="https://nodejs.org/en/">Node</a>, we would see the sum of <code>a</code> and <code>b</code> printed out -</p>
-<p><img src="/img/aplusb_1.svg" alt="Output" /></p>
+<p><img src="/ni/img/aplusb_1.svg" alt="Output" /></p>
 <p>Which is <code>2 + 2</code> and thusly <code>4</code>. At this point if, rather miraculously, we still want to play around with our variables and haven't opened Netflix in a new tab, then we might try changing the the value of either <code>a</code> or <code>b</code> - just for some mischief.</p>
 <p>Doing that and printing out <code>c</code> again all written down in code would look something like this -</p>
 <pre><code class="language-js">let a = 2;
@@ -259,7 +260,7 @@ a = 3;
 console.log(c);
 </code></pre>
 <p>Which if we run, again in a Javascript runtime like Node, would leave us with this output -</p>
-<p><img src="/img/aplusb_2.svg" alt="Output" /></p>
+<p><img src="/ni/img/aplusb_2.svg" alt="Output" /></p>
 <p>Uhm, hold up. Yeah, this afternoon sucks but how is it that <code>c</code> prints out as <code>4</code> the second time around too? </p>
 <p>We did tell javascript to let <code>c</code> be <em>equal</em> to <code>a + b</code>; and seeing as how <code>a + b</code> is now <code>3 + 2</code>, shouldn't javascript be printing out <code>5</code> the second time we print <code>c</code>?</p>
 <p>But evidently that's not what Javascript did, as <code>c</code> was still <code>4</code>. We can only conclude that Javascript is a spoilt little brat that does not to what it's told. It is seemingly deceiving us into thinking that <code>c</code> is equal to <code>a + b</code> when it most certainly isn't.</p>
@@ -273,7 +274,7 @@ console.log(c);
 // generates the &quot;liked by&quot; message and makes the relevant part of the website display it
 </code></pre>
 <p>Here <code>&quot;Liked by &quot; + randomLiker.name + &quot; and &quot; + noOfLikers + &quot; others&quot;</code> is what generates the messages like the following -</p>
-<p><img src="/img/liked_by_message.png" alt="Liked by message" /></p>
+<p><img src="/ni/img/liked_by_message.png" alt="Liked by message" /></p>
 <p>While what <code>document.getElementByID(&quot;NameOfPlaceWhereLikesAreShown&quot;).text</code> does is that it finds the place where we need to display the &quot;liked by&quot; message and set's its text to be equal to the &quot;liked by&quot; message we just generated.</p>
 <p>For the sake of simplicity, let's not worry about how we display the &quot;liked by&quot; message and simply assume that there is a <code>displayText</code> variable whose value will end up being shown where we need to show the &quot;liked by&quot; message. So we generate the message like so -</p>
 <pre><code class="language-js">let displayText = &quot;Liked by &quot; + numberOfLikers + &quot; others&quot;;
@@ -382,21 +383,6 @@ through the grapevine that the reaction of somebody in the State Department was,
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3001");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload(true); // force reload from server (not from cache)
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

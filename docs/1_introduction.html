@@ -155,7 +155,8 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#introduction" id="introduction">Introduction</a></h1>
-<p>Hi! I am going to try to teach you how to make Progressive Web Apps!</p>
+<p>Hey! <br />
+Here starts your journey on learning to make Progressive Web Apps!</p>
 <h2><a class="header" href="#what-are-progressive-web-apps" id="what-are-progressive-web-apps">What are Progressive Web Apps?</a></h2>
 <p>I thought I could just find an article explaining what they are and link them here and that would be the end of that. But apparently people have trouble explaining what they are, and I mostly ran across meta-articles explaining <a href="https://medium.com/@amberleyjohanna/seriously-though-what-is-a-progressive-web-app-56130600a093">why it's hard to explain what progressive web apps are</a> 😆.</p>
 <p>I guess I'll have to write about it myself.</p>
@@ -210,21 +211,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3001");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload(true); // force reload from server (not from cache)
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

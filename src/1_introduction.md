@@ -1,6 +1,7 @@
 # Introduction
 
-Hi! I am going to try to teach you how to make Progressive Web Apps!
+Hey! <br />
+Here starts your journey on learning to make Progressive Web Apps!
 
 ## What are Progressive Web Apps?
 
