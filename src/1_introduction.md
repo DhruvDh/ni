@@ -2,7 +2,6 @@
 
 Hey! <br />
 Here starts your journey on learning to make Progressive Web Apps!
-
 ## What are Progressive Web Apps?
 
 I thought I could just find an article explaining what they are and link them here and that would be the end of that. But apparently people have trouble explaining what they are, and I mostly ran across meta-articles explaining [why it's hard to explain what progressive web apps are](https://medium.com/@amberleyjohanna/seriously-though-what-is-a-progressive-web-app-56130600a093) 😆.

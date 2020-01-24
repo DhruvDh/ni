@@ -76,3 +76,7 @@ much about that; you'll just have to trust me for now.
 
 _Good luck!_ <br />
 *\- Dhruv Dhamani*
+
+PS: I've watched this talk by Alan Watts four times at different stages of my life. The first, I thought it to be pish-posh, and forgot about it. YouTube's algorithm was insistent however, and showed it to be again a year later; and again, and again - each time I took away something different from it. I think it is worth 12 mins of your life to figure out whether you are at a stage of your life when you can take away something from it.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qOZqGUCrje8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
